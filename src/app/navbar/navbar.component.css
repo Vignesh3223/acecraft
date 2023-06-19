@@ -1,0 +1,21 @@
+.navbar-brand {
+    color: white !important;
+    font-size: 30px;
+    font-family: Courier New;
+    letter-spacing: 10px;
+    display: inline-block;
+}
+
+.nav-link{
+    color: white !important;
+    color: #9e9e9e !important;
+    font-weight: 700;
+}
+
+.title{
+    text-align: center;
+}
+
+ul li{
+    padding-left: 40px;
+}
