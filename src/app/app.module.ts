@@ -7,12 +7,16 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { BadgeModule } from 'primeng/badge';
 import { HomeComponent } from './home/home.component';
 import { SplitterModule } from 'primeng/splitter';
+import { FooterComponent } from './footer/footer.component';
+import { AirenmaskComponent } from './airenmask/airenmask.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    FooterComponent,
+    AirenmaskComponent
   ],
   imports: [
     BrowserModule,

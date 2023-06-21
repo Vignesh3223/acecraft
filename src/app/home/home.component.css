@@ -1,3 +1,118 @@
-.card{
-    height:400px
+.homelayer {
+    background-color: #000000;
+}
+
+.page1 {
+    background-image: url("/assets/images/Home.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0 550px 0;
+    z-index: 0;
+    position: relative;
+}
+
+#ace {
+    position: absolute;
+    z-index: 1;
+    top: 550px;
+    text-align: center;
+}
+
+.box {
+    border: 1px solid white;
+    text-align: center;
+    width: 340px;
+    margin: 270px auto 0 auto;
+    z-index: 1;
+    position: absolute;
+    padding: 5px;
+}
+
+.row {
+    width: 100%;
+}
+
+.thin {
+    font-size: 36px;
+    font-weight: 200;
+    color: #978F8F;
+}
+
+.bold {
+    font-size: 36px;
+    font-weight: bold;
+    color: #978F8F;
+}
+
+.link a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+
+.school {
+    background-image: url("/assets/images/home1.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 120px 0 550px 0;
+    z-index: 0;
+}
+
+.box1 {
+    border: 1px solid white;
+    text-align: center;
+    width: 340px;
+    margin: 320px auto 0 auto;
+    z-index: 1;
+    position: absolute;
+    padding: 5px;
+}
+
+#ace1 {
+    position: absolute;
+    z-index: 1;
+    top: 575px;
+    text-align: center;
+}
+
+.link1 a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+
+.college {
+    background-image: url("/assets/images/home2.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 120px 0 550px 0;
+    z-index: 0;
+}
+
+.box2 {
+    border: 1px solid white;
+    text-align: center;
+    width: 340px;
+    margin: 320px auto 0 15px;
+    z-index: 1;
+    position: absolute;
+    padding: 5px;
+}
+
+#ace2 {
+    position: absolute;
+    z-index: 1;
+    top: 575px;
+    text-align: center;
+}
+
+.link2 a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
 }
