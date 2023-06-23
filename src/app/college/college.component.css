@@ -1,0 +1,220 @@
+.row {
+    width: 100%;
+}
+
+.page1 {
+    background-image: url('/assets/images/collections-bg.jpg');
+    background-repeat: no-repeat;
+    padding: 0 0 180px 0;
+    z-index: 0;
+    position: relative;
+}
+
+.one {
+    color: #978F8F;
+}
+
+.two,
+.three,
+.four {
+    color: #978F8F;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.five {
+    font-weight: bold;
+    color: #978F8F;
+    word-spacing: 2em;
+}
+
+#intro {
+    margin: 11em 0 0 3em;
+}
+
+.page2 {
+    background-color: #b2b3b5
+}
+
+.ball {
+    width: 375px;
+    height: 200px;
+}
+
+
+.point1 h2 {
+    color: #978F8F;
+}
+
+.wool,
+.cotton,
+.viscose {
+    width: 223px;
+    height: 200px;
+}
+
+.point2 h1,
+.point3 h1,
+.point4 h1 {
+    color: #978F8F;
+}
+
+.point1 p,
+.point2 p,
+.point3 p,
+.point4 p {
+    color: #00000096;
+    font-size: 15px;
+    white-space: pre-line;
+}
+
+.clg-1 {
+    background-image: url("/assets/images/making-banner.jpg");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 120px 0 180px 0;
+}
+
+.clg {
+    color: #978F8F;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.clg p {
+    font-size: 15px;
+}
+
+.clg h1 {
+    margin-top: -20px;
+}
+
+.page3 {
+    background-color: #000000;
+    padding: 100px 0 100px 0;
+}
+
+#content1 {
+    color: grey;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+#content1 h1 {
+    color: #978F8F;
+    font-weight: bold;
+}
+
+.tempo {
+    width: 550px;
+    height: 312px;
+}
+
+.page4 {
+    background-image: url("/assets/images/College-3.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 660px 0 0 0px;
+    z-index: 0;
+    position: relative;
+}
+
+.page4 .row {
+    margin-top: -6.2em;
+}
+
+.design {
+    position: absolute;
+    margin-top: -16em;
+    z-index: 1;
+
+}
+
+#c1,
+#c3 {
+    font-size: 24px;
+    color: #978F8F;
+}
+
+#c2 {
+    font-size: 18px;
+    color: #978F8F;
+    font-family: blenheim;
+}
+
+#btn1 {
+    border-color: white;
+    color: white;
+    border-radius: 0%;
+}
+
+.modal-title {
+    text-align: center;
+    margin-left: 50px;
+}
+
+input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px 10px 20px 46px;
+}
+
+
+
+#firstname,
+#lastname {
+    width: 200px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #555;
+}
+
+#email,
+#org,
+#phone,
+#quan {
+    font-size: 15px;
+    font-weight: 600;
+    color:#4d4d4d;
+}
+
+#firstname {
+    margin-left: -11px;
+}
+
+#lastname {
+    margin-left: 7px;
+}
+
+#choice {
+    display: flex;
+    margin-top: -8px;
+}
+
+#quantity1,
+#quantity2,
+#quantity3 {
+    margin-top: -22px;
+    margin-right: 5px;
+    font-size: 15px;
+    color:#4d4d4d;
+}
+
+label {
+    margin-right: 20px;
+}
+
+#btn2 {
+    width: 470px;
+    border-radius: 100px;
+}
+
+.icons i {
+    position: absolute;
+}
+
+.icon {
+    margin-top: 30px;
+    padding-right: 30px;
+}

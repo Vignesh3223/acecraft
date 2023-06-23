@@ -9,6 +9,9 @@ import { HomeComponent } from './home/home.component';
 import { SplitterModule } from 'primeng/splitter';
 import { FooterComponent } from './footer/footer.component';
 import { AirenmaskComponent } from './airenmask/airenmask.component';
+import { CollegeComponent } from './college/college.component';
+import { DialogModule } from 'primeng/dialog';
+import { ButtonModule } from 'primeng/button';
 
 @NgModule({
   declarations: [
@@ -16,14 +19,17 @@ import { AirenmaskComponent } from './airenmask/airenmask.component';
     NavbarComponent,
     HomeComponent,
     FooterComponent,
-    AirenmaskComponent
+    AirenmaskComponent,
+    CollegeComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     BadgeModule,
-    SplitterModule
+    SplitterModule,
+    DialogModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
