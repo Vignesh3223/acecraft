@@ -51,6 +51,18 @@
     font-weight: bold;
 }
 
+#img-container {
+    overflow: hidden;
+}
+#img-container .school,
+#img-container .work{
+    transition: transform .8s;
+}
+#img-container:hover .school,
+#img-container:hover .work{
+    transform: scale(1.05);
+}
+
 .school {
     background-image: url("/assets/images/home1.jpg");
     background-size: cover;
@@ -59,6 +71,7 @@
     padding: 120px 0 550px 0;
     z-index: 0;
 }
+
 
 .box1 {
     border: 1px solid white;
@@ -84,7 +97,7 @@
     font-weight: bold;
 }
 
-.college {
+.work {
     background-image: url("/assets/images/home2.jpg");
     background-size: cover;
     background-position: center;

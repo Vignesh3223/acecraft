@@ -1,0 +1,137 @@
+.row {
+    width: 100%;
+}
+
+.page1 {
+    background-image: url("/assets/images/Enterprises-1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center 100px;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 100px 0 150px 0;
+}
+
+.header {
+    justify-content: center;
+}
+
+#honda {
+    width: 223px;
+    height: 50px;
+}
+
+#link {
+    text-decoration: none;
+    color: black;
+}
+
+.item2 {
+    font-size: 30px;
+    color: #978f8f;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10em;
+}
+
+.page2 {
+    background-color: #dadada;
+}
+
+.content2 {
+    padding-top: 5em;
+}
+
+.content2 h1 {
+    color: #000000;
+}
+
+.content2 p {
+    font-size: 15px;
+    color: #000000;
+    font-weight: 400;
+}
+
+.card-container {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.card1 {
+    height: 300px;
+    width: 300px;
+    background-image: url("/assets/images/Enterprises-2.png");
+    background-size: cover;
+    border-radius: 10px;
+    transition: transform .2s;
+}
+
+.card2 {
+    height: 300px;
+    width: 300px;
+    background-image: url("/assets/images/Enterprises-3.png");
+    background-size: cover;
+    border-radius: 10px;
+    transition: transform .2s;
+}
+
+.card3 {
+    height: 300px;
+    width: 300px;
+    background-image: url("/assets/images/Enterprises-4.png");
+    background-size: cover;
+    border-radius: 10px;
+    transition: transform .2s;
+}
+
+.card-container h2 {
+    font-weight: 100;
+    color: #978f8f;
+}
+
+.card-container h5 {
+    font-weight: 450;
+    color: #978f8f;
+}
+
+.card1 .card-body {
+    padding-top: 115px;
+}
+
+.card2 .card-body {
+    padding-top: 95px;
+}
+
+.card3 .card-body {
+    padding-top: 75px;
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover {
+    transform: scale(0.9);
+}
+
+.page3 {
+    background-color: #000000;
+
+}
+
+.header2 {
+    text-align: center;
+    color: #978f8f;
+    font-weight: bold;
+    padding-top: 3em;
+}
+
+.time1 img {
+    width: 105px;
+    height: 108px;
+}
+
+.event-content{
+    font-size: 28px;
+    font-weight: 200;
+    white-space: pre-line;
+    color: #978f8f;
+}
