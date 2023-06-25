@@ -5,7 +5,7 @@
 .page1 {
     background-image: url("/assets/images/Home.jpg");
     background-size: cover;
-    background-position: center 110px;
+    background-position: center;
     padding: 120px 0 550px 0;
     z-index: 0;
     position: relative;
@@ -22,7 +22,7 @@
     border: 1px solid white;
     text-align: center;
     width: 340px;
-    margin: 270px auto 0 auto;
+    margin: 240px auto 0 auto;
     z-index: 1;
     position: absolute;
     padding: 5px;
