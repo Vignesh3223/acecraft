@@ -146,6 +146,15 @@
     font-family: blenheim;
 }
 
+#c1,
+#c2,
+#c3 {
+    line-height: 0.8;
+}
+
+#c3 {
+    letter-spacing: 5px;
+}
 #btn1 {
     border-color: white;
     color: white;
