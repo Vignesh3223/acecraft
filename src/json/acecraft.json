@@ -52,6 +52,43 @@
             "id":13,
             "title":"DRESS THE RIGHT WAY TO IMPRESS THE RIGHT WAY"
         }
+    ],
+    "schools":[
+        {
+            "id":1,
+            "logo":"http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/jain.jpeg",
+            "name":"JGI"
+        },
+        {
+            "id":2,
+            "logo":"http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/rvschool.png",
+            "name":"RV"
+        },
+        {
+            "id":3,
+            "logo":"http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/sophias.jpg",
+            "name":"SOPHIA"
+        },
+        {
+            "id":4,
+            "logo":"http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/kumarans.png",
+            "name":"KUMARANS"
+        },
+        {
+            "id":5,
+            "logo":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/Logo-%20New%20Horizon%20Gurukul.jpg",
+            "name":"NEW HORIZON GURUKUL"
+        },
+        {
+            "id":6,
+            "logo":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/cgis.png",
+            "name":"CISB"
+        },
+        {
+            "id":7,
+            "logo":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/NHIS%20LOGO%20Jpeg.jpg",
+            "name":"NHIS"
+        }
     ]
    
 }

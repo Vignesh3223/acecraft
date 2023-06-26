@@ -9,7 +9,7 @@
     </div>
     <div class="item2">
         <span>Workwear that works.</span><br>
-        <span><i class="fa-solid fa-chevron-down fa-2xs" style="color: #978F8F;"></i></span>
+        <span><i id="chevron" class="fa-solid fa-chevron-down fa-2xs"></i></span>
     </div>
 </section>
 <section class="page2">
@@ -54,12 +54,12 @@
     <div class="container-fluid">
         <h1 class="header2">This is how we do it</h1>
     </div>
-    <div class="container-fluid time1">
+    <div class="container time1">
         <div class="timeline-wrapper">
             <p-timeline [value]="events" layout="horizontal" align="top" styleClass="customized-timeline">
                 <ng-template pTemplate="marker" let-event>
                     <span class="custom-marker shadow-2 id" [style.color]="event.color">
-                        <i>{{event.id}}</i>
+                        <i class="event-id">{{event.id}}</i>
                     </span>
                 </ng-template>
                 <ng-template pTemplate="content" let-event>

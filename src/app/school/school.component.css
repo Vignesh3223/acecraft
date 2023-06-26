@@ -1,0 +1,276 @@
+.row {
+    width: 100%;
+}
+
+.page1 {
+    background-image: url("/assets/images/School-1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center 100px;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 100px 0 400px 0;
+}
+
+#scllogo {
+    width: 52px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sclname {
+    font-family: proxima;
+    font-size: 15px;
+    font-weight: 400;
+    color: black;
+}
+
+.item2 {
+    font-family: proxima;
+    font-size: 40px;
+    color: #978f8f;
+    text-align: center;
+    margin-top: 9em;
+    line-height: 1.2;
+}
+
+.page2 {
+    background-color: #000000;
+    padding: 250px 0 250px 0;
+}
+
+.page2 p {
+    font-family: proxima;
+    font-size: 40px;
+    color: #978f8f;
+    line-height: 1;
+}
+
+.page3 {
+    background-image: url("/assets/images/School-2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center 100px;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 100px 0 550px 0;
+}
+
+.item3 {
+    font-family: proxima;
+    font-size: 40px;
+    color: #000000;
+    text-align: center;
+    margin-top: 9em;
+    line-height: 1.2;
+}
+
+.item4 {
+    font-family: proxima;
+    font-size: 40px;
+    color: #000000;
+    text-align: center;
+    margin-top: 7em;
+    line-height: 1;
+}
+
+.page4 {
+    background-color: #0e0c0d;
+    padding: 100px 0 0 0;
+}
+
+.item5 strong {
+    font-family: proxima;
+    font-size: 40px;
+    color: #978f8f;
+    line-height: 1.2;
+}
+
+.item5 p {
+    font-family: proxima;
+    font-size: 24px;
+    font-weight: 100;
+    color: #978f8f;
+    line-height: 0;
+    margin-top: 40px;
+}
+
+#part {
+    width: 100%;
+}
+
+.page5 {
+    background-image: url("/assets/images/School-3.jpg");
+    background-size: cover;
+    padding: 120px 0 150px 0;
+}
+
+
+#c1,
+#c3 {
+    font-family: proxima;
+    font-size: 30px;
+    color: #978f8f;
+}
+
+#c2 {
+    color: #978f8f;
+    font-size: 18px;
+    font-family: blenheim;
+    position: relative;
+}
+
+#c2::before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 2px;
+    background: #978f8f;
+    left: 450px;
+    top: 32%;
+    position: absolute;
+}
+
+#c2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 2px;
+    background: #978f8f;
+    right: 450px;
+    top: 32%;
+    position: absolute;
+}
+
+
+#c1,
+#c2,
+#c3 {
+    line-height: 1.5;
+}
+
+#c3 {
+    line-height: 0.8;
+    letter-spacing: 5px;
+}
+
+#c4,
+#c5 {
+    font-family: proxima;
+    font-size: 20px;
+    color: #978f8f;
+}
+
+#c4 {
+    margin-top: 35px;
+}
+
+#c5 {
+    margin-top: 60px;
+}
+
+#btn1 {
+    font-family: proxima;
+    border-color: white;
+    color: white;
+    border-radius: 0%;
+    margin-top: 15px;
+}
+
+.modal-title {
+    font-family: proxima;
+    text-align: center;
+    margin-left: 50px;
+}
+
+input {
+    font-family: proxima;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px 10px 20px 46px;
+}
+
+#firstname,
+#lastname {
+    width: 200px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #555;
+}
+
+#email,
+#org,
+#phone,
+#quan {
+    font-size: 15px;
+    font-weight: 600;
+    color: #4d4d4d;
+}
+
+#firstname {
+    margin-left: -11px;
+}
+
+#lastname {
+    margin-left: 7px;
+}
+
+#choice {
+    display: flex;
+    margin-top: -8px;
+}
+
+#quantity1,
+#quantity2,
+#quantity3 {
+    margin-top: -22px;
+    margin-right: 5px;
+    font-size: 15px;
+    color: #4d4d4d;
+}
+
+label {
+    font-family: proxima;
+    margin-right: 20px;
+}
+
+#btn2 {
+    width: 470px;
+    border-radius: 100px;
+}
+
+.icons i {
+    position: absolute;
+}
+
+.icon {
+    margin-top: 30px;
+    padding-right: 30px;
+}
+
+#chevron {
+    width: 10px;
+    height: 20px;
+    position: relative;
+    top: 1px;
+    animation: mymove 1s linear infinite;
+}
+
+@keyframes mymove {
+    0% {
+        top: 0px;
+    }
+
+    50% {
+        top: 10px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}

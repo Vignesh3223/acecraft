@@ -5,6 +5,7 @@ import { AirenmaskComponent } from './airenmask/airenmask.component';
 import { CollegeComponent } from './college/college.component';
 import { NotesComponent } from './notes/notes.component';
 import { EnterpriseComponent } from './enterprise/enterprise.component';
+import { SchoolComponent } from './school/school.component';
 const routes: Routes = [
   {
     path: '', component: HomeComponent
@@ -20,6 +21,9 @@ const routes: Routes = [
   },
   {
     path: 'enterprise', component: EnterpriseComponent
+  },
+  {
+    path: 'school', component: SchoolComponent
   },
 ];
 

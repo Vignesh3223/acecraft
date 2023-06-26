@@ -1,4 +1,10 @@
 export interface Notes {
-    id:number;
+    id: number;
     title: string;
+}
+
+export interface Schools {
+    id: number;
+    logo: string;
+    name: string;
 }

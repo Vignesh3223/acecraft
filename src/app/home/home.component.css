@@ -5,8 +5,10 @@
 .page1 {
     background-image: url("/assets/images/Home.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
-    padding: 120px 0 550px 0;
+    padding: 120px 0 540px;
+    margin-top: 6.5em;
     z-index: 0;
     position: relative;
 }
@@ -33,12 +35,14 @@
 }
 
 .thin {
+    font-family: proxima;
     font-size: 36px;
     font-weight: 200;
     color: #978F8F;
 }
 
 .bold {
+    font-family: proxima;
     font-size: 36px;
     font-weight: bold;
     color: #978F8F;
@@ -46,6 +50,7 @@
 
 .link a {
     text-decoration: none;
+    font-family: proxima;
     font-size: 18px;
     color: white;
     font-weight: bold;
@@ -54,12 +59,14 @@
 #img-container {
     overflow: hidden;
 }
+
 #img-container .school,
-#img-container .work{
+#img-container .work {
     transition: transform .8s;
 }
+
 #img-container:hover .school,
-#img-container:hover .work{
+#img-container:hover .work {
     transform: scale(1.05);
 }
 
@@ -91,6 +98,7 @@
 }
 
 .link1 a {
+    font-family: proxima;
     text-decoration: none;
     font-size: 18px;
     color: white;
@@ -124,8 +132,31 @@
 }
 
 .link2 a {
+    font-family: proxima;
     text-decoration: none;
     font-size: 18px;
     color: white;
     font-weight: bold;
+}
+
+#chevron {
+    width: 10px;
+    height: 20px;
+    position: relative;
+    top: 1px;
+    animation: mymove 1s linear infinite;
+}
+
+@keyframes mymove {
+    0% {
+        left: 0px;
+    }
+
+    50% {
+        left: 8px;
+    }
+
+    100% {
+        left: 0px;
+    }
 }

@@ -1,0 +1,102 @@
+<section class="page1">
+    <div class="container-breakpoint bg-white">
+        <div class="row justify-content-center">
+            <div class="col-1 " *ngFor="let scl of  schoolsList">
+                <a href="">
+                    <img id="scllogo" src="{{scl.logo}}" alt="logo">
+                    <p class="text-center sclname">{{scl.name}}</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="item2">
+        <span>Designer uniforms <strong>for the doers.</strong></span><br>
+        <span><i id="chevron" class="fa-solid fa-chevron-down fa-2xs"></i></span>
+    </div>
+</section>
+<section class="page2">
+    <div class="container text-center">
+        <p>Aesthetically advanced,</p>
+        <p>our designer uniforms are <strong>a cut above the rest</strong>,</p>
+        <p><strong>in every sense of the word.</strong></p>
+    </div>
+</section>
+<section class="page3">
+    <div class="item3">
+        <span>Perfection. Now <strong>delivering to your doorstep.</strong></span><br>
+        <span><i id="chevron" class="fa-solid fa-chevron-down fa-2xs"></i></span>
+    </div>
+    <div class="item4">
+        <p>Less <strong>hassle.</strong> More <strong>hustle.</strong></p>
+        <p>Our end-to-end e-commerce facility with</p>
+        <p><strong>superior technology enables us to</strong></p>
+        <p><strong>deliver your order right to your doorstep.</strong></p>
+    </div>
+</section>
+<section class="page4">
+    <div class="container text-end item5">
+        <strong>Be at ease.</strong><br>
+        <strong>Everyday.</strong>
+        <p>Our uniforms keep your children looking great</p>
+        <p>from the first day of school until the end-of-the-year picnic.</p>
+    </div>
+    <div class="container">
+        <img id="part" src="/assets/images/parts.jpg" alt="parts">
+    </div>
+</section>
+<section class="page5">
+    <div class="container text-center item6">
+        <p id="c1">Designer Uniforms</p>
+        <p id="c2">by</p>
+        <p id="c3">acecraft</p>
+        <p id="c4">Establish a<strong> signature look </strong>for your school.</p>
+        <p id="c5">Looking to change your supplier?</p>
+        <button type="button" id="btn1" class="btn btn-transparent" data-bs-toggle="modal"
+            data-bs-target="#exampleModal"> Get In Touch </button>
+    </div>
+</section>
+<div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Get your Uniforms designed and<br>styled by Us!</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid icons">
+                    <div class="row">
+                        <div class="col-6 ">
+                            <i class="fa-solid fa-user fa-2xl icon" style="color: #d2d0d0;"></i>
+                            <input type="text" id="firstname" placeholder="First Name">
+                        </div>
+                        <div class="col-6">
+                            <input type="text" id="lastname" placeholder="Last Name">
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <i class="fa-solid fa-envelope fa-2xl icon" style="color: #d2d0d0;"></i>
+                        <input type="email" id="email" placeholder="Professional Email">
+                    </div><br>
+                    <div class="row">
+                        <i class="fa-solid fa-building fa-2xl icon" style="color: #d2d0d0;"></i>
+                        <input type="text" id="org" placeholder="Organisation">
+                    </div><br>
+                    <div class="row">
+                        <i class="fa-solid fa-mobile fa-2xl icon" style="color: #d2d0d0;"></i>
+                        <input type="text" id="phone" placeholder="Phone No.">
+                    </div>
+                    <p id="quan">Quantity required</p>
+                    <div id="choice">
+                        <input type="radio" id="quantity1" name="age" value="50">
+                        <label for="age1">10 - 50 sets</label><br>
+                        <input type="radio" id="quantity2" name="age" value="100">
+                        <label for="age2">51 - 100 sets</label><br>
+                        <input type="radio" id="quantity3" name="age" value="100+">
+                        <label for="age3">100+ sets</label><br><br>
+                    </div>
+                </div>
+                <button type="button" id="btn2" class="btn btn-secondary" data-bs-dismiss="modal">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>

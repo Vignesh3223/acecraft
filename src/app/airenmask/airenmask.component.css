@@ -1,6 +1,7 @@
 
 .container a {
     text-decoration: none;
+    font-family: proxima;
     color: white;
 }
 
@@ -11,5 +12,6 @@
 
 h1,
 h3 {
+    font-family: proxima;
     color: #9e9e9e;
 }

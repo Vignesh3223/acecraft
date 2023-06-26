@@ -17,6 +17,7 @@ import { NotesComponent } from './notes/notes.component';
 import { CardModule } from 'primeng/card';
 import { EnterpriseComponent } from './enterprise/enterprise.component';
 import { TimelineModule } from 'primeng/timeline';
+import { SchoolComponent } from './school/school.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { TimelineModule } from 'primeng/timeline';
     AirenmaskComponent,
     CollegeComponent,
     NotesComponent,
-    EnterpriseComponent
+    EnterpriseComponent,
+    SchoolComponent
   ],
   imports: [
     BrowserModule,
