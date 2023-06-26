@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Notes, Schools } from 'src/models/acecraft';
+import { Notes, Schools, Honda } from 'src/models/acecraft';
 
 
 @Injectable({
@@ -11,7 +11,8 @@ export class AceServiceService {
   constructor(private http: HttpClient) { }
 
   noteurl: string = "http://localhost:3000/notes";
-  schoolurl: string = "http://localhost:3000/schools"
+  schoolurl: string = "http://localhost:3000/schools";
+  hondaurl: string="http://localhost:3000/honda";
   
 
   getNotes() {
@@ -22,4 +23,7 @@ export class AceServiceService {
     return this.http.get<Schools[]>(this.schoolurl);
   }
  
+  getHonda(){
+    return this.http.get<Honda[]>(this.hondaurl);
+  }
 }

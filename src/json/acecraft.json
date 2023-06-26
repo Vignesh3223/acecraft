@@ -1,94 +1,160 @@
 {
-    "notes":[
+    "notes": [
+        {
+            "id": 1,
+            "title": "STYLING ACCESSORIES THAT COMPLEMENT YOUR FORMAL WEAR"
+        },
+        {
+            "id": 2,
+            "title": "5 CLASSIC LOOKS FOR HER"
+        },
+        {
+            "id": 3,
+            "title": "ACING YUR FORAML ATTIRE"
+        },
+        {
+            "id": 4,
+            "title": "SELECTING & STYLING YOUR WORKWEAR"
+        },
+        {
+            "id": 5,
+            "title": "LET'S TALK 'BODY TYPES', WOMEN!"
+        },
+        {
+            "id": 6,
+            "title": "5 CLASSIC LOOKS FOR HIM"
+        },
+        {
+            "id": 7,
+            "title": "TIPS FOR A GREAT OUTFIT"
+        },
+        {
+            "id": 8,
+            "title": "DRESSING TO SUCCEED: THE IMPORTANCE OF 'FORMALS'"
+        },
+        {
+            "id": 1,
+            "title": "WORKWEAR FOR ALL SEASONS: THE WOMEN EDIT"
+        },
+        {
+            "id": 10,
+            "title": "THE ACECRAFT DIFFERENCE"
+        },
+        {
+            "id": 11,
+            "title": "CORPORATE TO CUPCAKES STORY OF A SUPER WOMAN"
+        },
+        {
+            "id": 12,
+            "title": "HOW TO COMPLETE YOUR COLLEGE LOOK"
+        },
+        {
+            "id": 13,
+            "title": "DRESS THE RIGHT WAY TO IMPRESS THE RIGHT WAY"
+        }
+    ],
+    "schools": [
+        {
+            "id": 1,
+            "logo": "http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/jain.jpeg",
+            "name": "JGI"
+        },
+        {
+            "id": 2,
+            "logo": "http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/rvschool.png",
+            "name": "RV"
+        },
+        {
+            "id": 3,
+            "logo": "http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/sophias.jpg",
+            "name": "SOPHIA"
+        },
+        {
+            "id": 4,
+            "logo": "http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/kumarans.png",
+            "name": "KUMARANS"
+        },
+        {
+            "id": 5,
+            "logo": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/Logo-%20New%20Horizon%20Gurukul.jpg",
+            "name": "NEW HORIZON GURUKUL"
+        },
+        {
+            "id": 6,
+            "logo": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/cgis.png",
+            "name": "CISB"
+        },
+        {
+            "id": 7,
+            "logo": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/NHIS%20LOGO%20Jpeg.jpg",
+            "name": "NHIS"
+        }
+    ],
+    "honda":[
         {
             "id":1,
-            "title":"STYLING ACCESSORIES THAT COMPLEMENT YOUR FORMAL WEAR"
+            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/647eea25c87d60b3cd18a95d/webp/hndc-sales-manpower-480x480.png",
+            "text":"HONDA CARS | SALES MANPOWER [Discounted Bundle]",
+            "pcode":"Product Code: HNDC-SALES/W",
+            "brand":"ACECRAFT",
+            "sold":"Alchemy",
+            "price": 4149,
+            "originalPrice": 4799,
+            "offerPercent": "14% OFF",
+            "gender":"all",
+            "quantity":1,
+            "description":""
         },
         {
             "id":2,
-            "title":"5 CLASSIC LOOKS FOR HER"
+            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/647da9185c62e5426f794785/webp/hndc-blazer-480x480.png",
+            "text":"HONDA CARS | SALES MANPOWER- County Jacket"
         },
         {
             "id":3,
-            "title":"ACING YUR FORAML ATTIRE"
+            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/647dfa5e4f7c537b4b5f0b05/webp/hndc-shirt-480x480.png",
+            "text":"HONDA CARS | SALES MANPOWER- County Shirts"
         },
         {
             "id":4,
-            "title":"SELECTING & STYLING YOUR WORKWEAR"
+            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/647db254ecabd82217ea3a9f/webp/hndc-trouser-480x480.png",
+            "text":"HONDA CARS | SALES MANPOWER- County Trousers"
         },
         {
             "id":5,
-            "title":"LET'S TALK 'BODY TYPES', WOMEN!"
+            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/647db88e32202b73567736da/webp/hndc-tie-480x480.png",
+            "text":"HONDA CARS | SALES MANPOWER- Ties"
         },
         {
             "id":6,
-            "title":"5 CLASSIC LOOKS FOR HIM"
+            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/647e00f63d7d5614b12c88c3/webp/hndc-cravat-480x480.png",
+            "text":"HONDA CARS | SALES MANPOWER- Cravat"
         },
+        
         {
             "id":7,
-            "title":"TIPS FOR A GREAT OUTFIT"
+            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/647dfb66973f7613d7584371/webp/hndc-lapel-pin-480x480.png",
+            "text":"HONDA CARS | SALES MANPOWER- Lapel Pin"
         },
         {
             "id":8,
-            "title":"DRESSING TO SUCCEED: THE IMPORTANCE OF 'FORMALS'"
+            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/647dca54c555fc3016e54b9d/webp/waist-coat-480x480.png",
+            "text":"HONDA CARS | SUPPORT STAFF- County Waistcoat"
         },
         {
-            "id":1,
-            "title":"WORKWEAR FOR ALL SEASONS: THE WOMEN EDIT"
+            "id":9,
+            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/648c80c9576be1481b336ae9/webp/hndc-support-staff-shirt-480x480.png",
+            "text":"HONDA CARS | SUPPORT STAFF- County Shirts"
         },
         {
             "id":10,
-            "title":"THE ACECRAFT DIFFERENCE"
+            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/647dfa72b51ea3145ebc47cb/webp/hndc-trouser-480x480.png",
+            "text":"HONDA CARS | SUPPORT STAFF- County Trousers"
         },
         {
             "id":11,
-            "title":"CORPORATE TO CUPCAKES STORY OF A SUPER WOMAN"
-        },
-        {
-            "id":12,
-            "title":"HOW TO COMPLETE YOUR COLLEGE LOOK"
-        },
-        {
-            "id":13,
-            "title":"DRESS THE RIGHT WAY TO IMPRESS THE RIGHT WAY"
-        }
-    ],
-    "schools":[
-        {
-            "id":1,
-            "logo":"http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/jain.jpeg",
-            "name":"JGI"
-        },
-        {
-            "id":2,
-            "logo":"http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/rvschool.png",
-            "name":"RV"
-        },
-        {
-            "id":3,
-            "logo":"http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/sophias.jpg",
-            "name":"SOPHIA"
-        },
-        {
-            "id":4,
-            "logo":"http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/kumarans.png",
-            "name":"KUMARANS"
-        },
-        {
-            "id":5,
-            "logo":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/Logo-%20New%20Horizon%20Gurukul.jpg",
-            "name":"NEW HORIZON GURUKUL"
-        },
-        {
-            "id":6,
-            "logo":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/cgis.png",
-            "name":"CISB"
-        },
-        {
-            "id":7,
-            "logo":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/NHIS%20LOGO%20Jpeg.jpg",
-            "name":"NHIS"
+            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/647dba4a32202b735677c53b/webp/hndc-lapel-pin-480x480.png",
+            "text":"HONDA CARS | SUPPORT STAFF-PANTRY- LAPEL PIN & GLOVES"
         }
     ]
-   
 }

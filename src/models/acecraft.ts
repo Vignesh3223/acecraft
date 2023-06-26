@@ -8,3 +8,9 @@ export interface Schools {
     logo: string;
     name: string;
 }
+
+export interface Honda {
+    id:number;
+    image:string;
+    text:string;
+}

@@ -1,0 +1,26 @@
+<section class="page1">
+    <div class="container text-center text1">
+        <p class="p1">Decode</p>
+        <p class="p2">your kind of designer uniforms.</p>
+    </div>
+</section>
+<section class="page2">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 text-start">
+                <p class="p3">honda car's dealers manpower uniforms</p>
+            </div>
+            <div class="col-3 text-center">
+                <p class="p4">- 11 items</p>
+            </div>
+        </div>
+    </div>
+    <div class="container justify-content-center">
+        <div class="row">
+            <div class="col-4 mb-3 justify-content-center" *ngFor="let honda of hondalist">
+                <img id="uniforms" src="{{honda.image}}" alt="uniform" width="350px" height="450px"><br>
+                <p class="p5">{{honda.text}}</p>
+            </div>
+        </div>
+    </div>
+</section>
