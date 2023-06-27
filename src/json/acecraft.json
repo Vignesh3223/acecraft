@@ -90,71 +90,311 @@
             "name": "NHIS"
         }
     ],
-    "honda":[
+    "honda": [
         {
-            "id":1,
-            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/647eea25c87d60b3cd18a95d/webp/hndc-sales-manpower-480x480.png",
-            "text":"HONDA CARS | SALES MANPOWER [Discounted Bundle]",
-            "pcode":"Product Code: HNDC-SALES/W",
-            "brand":"ACECRAFT",
-            "sold":"Alchemy",
+            "id": 1,
+            "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/647eea25c87d60b3cd18a95d/webp/hndc-sales-manpower-480x480.png",
+            "text": "HONDA CARS | SALES MANPOWER [Discounted Bundle]",
+            "pcode": "HNDC-SALES/W",
+            "brand": "ACECRAFT",
+            "soldby": "Alchemy",
             "price": 4149,
-            "originalPrice": 4799,
-            "offerPercent": "14% OFF",
-            "gender":"all",
-            "quantity":1,
-            "description":""
+            "originalprice": 4799,
+            "offerpercent": 14,
+            "gender": [
+                "WOMAN",
+                "MAN"
+            ],
+            "quantity": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+            ],
+            "description": [
+                "Made from high-performance fibres with enhanced elasticity, making this super-comfortable."
+            ]
         },
         {
-            "id":2,
-            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/647da9185c62e5426f794785/webp/hndc-blazer-480x480.png",
-            "text":"HONDA CARS | SALES MANPOWER- County Jacket"
+            "id": 2,
+            "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/647da9185c62e5426f794785/webp/hndc-blazer-480x480.png",
+            "text": "HONDA CARS | SALES MANPOWER- County Jacket",
+            "pcode": "HNDC-SALES/CJ-W",
+            "brand": "ACECRAFT",
+            "soldby": "Alchemy",
+            "price": 999,
+            "gender": [
+                "WOMAN",
+                "MAN"
+            ],
+            "quantity": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+            ],
+            "description": [
+                "Made from high-performance fibres with enhanced elasticity, making this super-comfortable."
+            ]
         },
         {
-            "id":3,
-            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/647dfa5e4f7c537b4b5f0b05/webp/hndc-shirt-480x480.png",
-            "text":"HONDA CARS | SALES MANPOWER- County Shirts"
+            "id": 3,
+            "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/647dfa5e4f7c537b4b5f0b05/webp/hndc-shirt-480x480.png",
+            "text": "HONDA CARS | SALES MANPOWER- County Shirts",
+            "pcode": "HNDC-SALES/CS-W",
+            "brand": "ACECRAFT",
+            "soldby": "Alchemy",
+            "price": 800,
+            "gender": [
+                "WOMAN",
+                "MAN"
+            ],
+            "quantity": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+            ],
+            "description": [
+                "Made from high-performance fibres with enhanced elasticity, making this super-comfortable."
+            ]
         },
         {
-            "id":4,
-            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/647db254ecabd82217ea3a9f/webp/hndc-trouser-480x480.png",
-            "text":"HONDA CARS | SALES MANPOWER- County Trousers"
+            "id": 4,
+            "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/647db254ecabd82217ea3a9f/webp/hndc-trouser-480x480.png",
+            "text": "HONDA CARS | SALES MANPOWER- County Trousers",
+            "pcode": "HNDC-SALES/CT-W",
+            "brand": "ACECRAFT",
+            "soldby": "Alchemy",
+            "price": 900,
+            "gender": [
+                "WOMAN",
+                "MAN"
+            ],
+            "quantity": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+            ],
+            "description": [
+                "Made from high-performance fibres with enhanced elasticity, making this super-comfortable."
+            ]
         },
         {
-            "id":5,
-            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/647db88e32202b73567736da/webp/hndc-tie-480x480.png",
-            "text":"HONDA CARS | SALES MANPOWER- Ties"
+            "id": 5,
+            "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/647db88e32202b73567736da/webp/hndc-tie-480x480.png",
+            "text": "HONDA CARS | SALES MANPOWER- Ties",
+            "pcode": "HNDC-SALES/TIE",
+            "brand": "ACECRAFT",
+            "soldby": "Alchemy",
+            "price": 250,
+            "gender": [
+                "MAN"
+            ],
+            "quantity": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+            ],
+            "description": [
+                "Made from high-performance fibres with enhanced elasticity, making this super-comfortable."
+            ]
         },
         {
-            "id":6,
-            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/647e00f63d7d5614b12c88c3/webp/hndc-cravat-480x480.png",
-            "text":"HONDA CARS | SALES MANPOWER- Cravat"
+            "id": 6,
+            "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/647e00f63d7d5614b12c88c3/webp/hndc-cravat-480x480.png",
+            "text": "HONDA CARS | SALES MANPOWER- Cravat",
+            "pcode": "HNDC-SALES/CRAVAT",
+            "brand": "ACECRAFT",
+            "soldby": "Alchemy",
+            "price": 250,
+            "gender": [
+                "WOMAN"
+            ],
+            "quantity": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+            ],
+            "description": [
+                "Made from high-performance fibres with enhanced elasticity, making this super-comfortable."
+            ]
         },
-        
         {
-            "id":7,
-            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/647dfb66973f7613d7584371/webp/hndc-lapel-pin-480x480.png",
-            "text":"HONDA CARS | SALES MANPOWER- Lapel Pin"
+            "id": 7,
+            "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/647dfb66973f7613d7584371/webp/hndc-lapel-pin-480x480.png",
+            "text": "HONDA CARS | SALES MANPOWER- Lapel Pin",
+            "pcode": "HNDC-SALES/LAPELPIN",
+            "brand": "ACECRAFT",
+            "soldby": "Alchemy",
+            "price": 150,
+            "gender": [
+                "UNISEX"
+            ],
+            "quantity": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+            ],
+            "description": [
+                "Made from high-performance fibres with enhanced elasticity, making this super-comfortable."
+            ]
         },
         {
-            "id":8,
-            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/647dca54c555fc3016e54b9d/webp/waist-coat-480x480.png",
-            "text":"HONDA CARS | SUPPORT STAFF- County Waistcoat"
+            "id": 8,
+            "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/647dca54c555fc3016e54b9d/webp/waist-coat-480x480.png",
+            "text": "HONDA CARS | SUPPORT STAFF- County Waistcoat",
+            "pcode": "HNDC-SALES/CW",
+            "brand": "ACECRAFT",
+            "soldby": "Alchemy",
+            "price": 790,
+            "department": [
+                "PANTRY" 
+            ],
+            "quantity": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+            ],
+            "description": [
+                "Made from high-performance fibres with enhanced elasticity, making this super-comfortable."
+            ]
         },
         {
-            "id":9,
-            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/648c80c9576be1481b336ae9/webp/hndc-support-staff-shirt-480x480.png",
-            "text":"HONDA CARS | SUPPORT STAFF- County Shirts"
+            "id": 9,
+            "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/648c80c9576be1481b336ae9/webp/hndc-support-staff-shirt-480x480.png",
+            "text": "HONDA CARS | SUPPORT STAFF- County Shirts",
+            "pcode": "HNDC-SALES/CS-W",
+            "brand": "ACECRAFT",
+            "soldby": "Alchemy",
+            "price": 420,
+            "gender": [
+                "WOMAN",
+                "MAN"
+            ],
+            "quantity": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+            ],
+            "description": [
+                "Made from high-performance fibres with enhanced elasticity, making this super-comfortable."
+            ]
         },
         {
-            "id":10,
-            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/647dfa72b51ea3145ebc47cb/webp/hndc-trouser-480x480.png",
-            "text":"HONDA CARS | SUPPORT STAFF- County Trousers"
+            "id": 10,
+            "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/647dfa72b51ea3145ebc47cb/webp/hndc-trouser-480x480.png",
+            "text": "HONDA CARS | SUPPORT STAFF- County Trousers",
+            "pcode": "HNDC-SALES/CT-W",
+            "brand": "ACECRAFT",
+            "soldby": "Alchemy",
+            "price": 590,
+            "gender": [
+                "WOMAN",
+                "MAN"
+            ],
+            "quantity": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+            ],
+            "description": [
+                "Made from high-performance fibres with enhanced elasticity, making this super-comfortable."
+            ]
         },
         {
-            "id":11,
-            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/647dba4a32202b735677c53b/webp/hndc-lapel-pin-480x480.png",
-            "text":"HONDA CARS | SUPPORT STAFF-PANTRY- LAPEL PIN & GLOVES"
+            "id": 11,
+            "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/647dba4a32202b735677c53b/webp/hndc-lapel-pin-480x480.png",
+            "text": "HONDA CARS | SUPPORT STAFF-PANTRY- LAPEL PIN & GLOVES",
+            "pcode": "HNDC-SALES/LAPELPIN-G",
+            "brand": "ACECRAFT",
+            "soldby": "Alchemy",
+            "price": 199,
+            "gender": [
+                "UNISEX"
+            ],
+            "quantity": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+            ],
+            "description": [
+                "Made from high-performance fibres with enhanced elasticity, making this super-comfortable."
+            ]
         }
     ]
 }

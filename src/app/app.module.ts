@@ -20,6 +20,11 @@ import { TimelineModule } from 'primeng/timeline';
 import { SchoolComponent } from './school/school.component';
 import { ViewnoteComponent } from './notes/viewnote/viewnote.component';
 import { HondaComponent } from './honda/honda.component';
+import { SingleProductComponent } from './honda/single-product/single-product.component';
+import { ViewProductComponent } from './honda/view-product/view-product.component';
+import { CarouselModule } from 'primeng/carousel';
+import { HondasortPipe } from '../shared/hondasort.pipe';
+
 
 @NgModule({
   declarations: [
@@ -33,7 +38,10 @@ import { HondaComponent } from './honda/honda.component';
     EnterpriseComponent,
     SchoolComponent,
     ViewnoteComponent,
-    HondaComponent
+    HondaComponent,
+    SingleProductComponent,
+    ViewProductComponent,
+    HondasortPipe,
   ],
   imports: [
     BrowserModule,
@@ -45,7 +53,8 @@ import { HondaComponent } from './honda/honda.component';
     DialogModule,
     ButtonModule,
     CardModule,
-    TimelineModule
+    TimelineModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

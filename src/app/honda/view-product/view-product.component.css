@@ -1,0 +1,111 @@
+.page1 {
+    background-color: #FFFFFF;
+    padding: 250px 0 400px 0;
+}
+
+#list1 h1 {
+    font-family: proxima;
+    font-weight: 500px;
+    color: #000000;
+}
+
+#list1 p {
+    font-family: proxima;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.price {
+    font-family: proxima;
+    font-size: 36px;
+    color: #000000;
+    font-weight: 300;
+}
+
+.originalprice {
+    font-family: proxima;
+    font-size: 18px;
+    color: #000000;
+    text-decoration: line-through;
+    font-weight: 300;
+}
+
+.offer {
+    border: 1px solid black;
+    background-color: black;
+    color: #FFFFFF;
+    padding: 5px;
+    font-family: proxima;
+    font-size: 14px;
+    margin-left: 30px;
+}
+
+.gender,
+.dept {
+    border: 1px solid black;
+    background-color: black;
+    color: #FFFFFF;
+    padding: 10px;
+    font-family: proxima;
+    font-size: 14px;
+    width: 100px;
+    height: 35px;
+}
+
+.dropdown {
+    width: 135px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: proxima;
+    padding: 6px 12px
+}
+
+.quantity {
+    border: 1px solid black;
+    background-color: black;
+    color: #FFFFFF;
+    padding: 10px 20px 10px 5px;
+    font-family: proxima;
+    font-size: 14px;
+    width: 100px;
+    height: 35px;
+}
+
+#amt {
+    width: 135px;
+    height: 40px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: proxima;
+}
+
+#btn1,
+#btn2 {
+    background-color: #000000;
+    border-radius: 0;
+    border: none;
+    color: #FFFFFF;
+    font-family: proxima;
+    font-size: 19px;
+    padding: 8px 15px;
+    margin-top: 50px;
+}
+
+.description,
+.related {
+    font-family: proxima;
+    font-size: 16px;
+    padding: 10px;
+    background: whitesmoke;
+    border: 1px solid #f1f1f1;
+}
+
+#des1 {
+    font-family: proxima;
+    font-size: 16px;
+    color: #000000;
+    padding: 20px 0 0 20px;
+}

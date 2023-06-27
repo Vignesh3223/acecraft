@@ -12,8 +12,8 @@ export class AceServiceService {
 
   noteurl: string = "http://localhost:3000/notes";
   schoolurl: string = "http://localhost:3000/schools";
-  hondaurl: string="http://localhost:3000/honda";
-  
+  hondaurl: string = "http://localhost:3000/honda";
+
 
   getNotes() {
     return this.http.get<Notes[]>(this.noteurl);
@@ -22,8 +22,12 @@ export class AceServiceService {
   getSchool() {
     return this.http.get<Schools[]>(this.schoolurl);
   }
- 
-  getHonda(){
+
+  getHonda() {
     return this.http.get<Honda[]>(this.hondaurl);
+  }
+
+  getHondabyId(id: number) {
+    return this.http.get<Honda[]>(this.hondaurl + '?id=' + id);
   }
 }

@@ -13,13 +13,22 @@
             <div class="col-3 text-center">
                 <p class="p4">- 11 items</p>
             </div>
+            <div class="col-5 text-end">
+                <select (change)="onOptionsSelected($event)" id="sort">
+                    <option value="" disabled selected hidden>Sort by:</option>
+                    <option value="l-h">Price : Low to High</option>
+                    <option value="h-l">Price : High to Low</option>
+                    <option value="n-asc">Name : Ascending Order</option>
+                    <option value="n-desc">Name : Descending Order</option>
+                </select>
+            </div>
         </div>
     </div>
     <div class="container justify-content-center">
         <div class="row">
-            <div class="col-4 mb-3 justify-content-center" *ngFor="let honda of hondalist">
-                <img id="uniforms" src="{{honda.image}}" alt="uniform" width="350px" height="450px"><br>
-                <p class="p5">{{honda.text}}</p>
+            <div class="col-4 mb-3 justify-content-center"
+                *ngFor="let honda of hondalist | sort : [sortParam , sortDirection]">
+                <app-single-product [products]="honda"></app-single-product>
             </div>
         </div>
     </div>

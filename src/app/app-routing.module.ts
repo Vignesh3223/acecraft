@@ -7,6 +7,7 @@ import { NotesComponent } from './notes/notes.component';
 import { EnterpriseComponent } from './enterprise/enterprise.component';
 import { SchoolComponent } from './school/school.component';
 import { HondaComponent } from './honda/honda.component';
+import { ViewProductComponent } from './honda/view-product/view-product.component';
 const routes: Routes = [
   {
     path: '', component: HomeComponent
@@ -28,7 +29,12 @@ const routes: Routes = [
   },
   {
     path: 'honda', component: HondaComponent
-  }
+  },
+  {
+    path: 'viewProduct/:id', component: ViewProductComponent
+  },
+ 
+
 ];
 
 @NgModule({

@@ -53,10 +53,28 @@
     color: #878b94;
 }
 
-.p5{
+#sort {
+    border: 1px solid #d5d6d9;
+    padding: 8px 13px;
+    font-size: 13px;
     font-family: proxima;
-    color: #000000;
-    font-size: 14px;
-    text-align: center;
-    font-weight: 700;
+    color: #7e818c;
+    cursor: pointer;
+    width: 190px;
+    height: 34px;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+/* .opt{
+ font-family: proxima;
+ font-size: 16px;
+ color: black;
+} */
+
+#sort option{
+    color: black;
+    font-family: proxima;
+    font-weight:normal;
+    padding: 16px;
 }
