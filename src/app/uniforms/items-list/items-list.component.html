@@ -1,0 +1,13 @@
+<div class="row mt-5">
+    <span class="related">Related Products</span>
+    <p-carousel [value]="products" [numVisible]="4" [numScroll]="4" [circular]="true">
+        <ng-template let-product pTemplate="item">
+            <div class="border-1 surface-border border-round m-2 text-center py-5 px-3">
+                <div class="mb-3">
+                    <img src="{{ product.imgurl }}" [alt]="product.name" width="150px" height="250px" />
+                    <p class="mb-1 title">{{ product.text }}</p>
+                </div>
+            </div>
+        </ng-template>
+    </p-carousel>
+</div>

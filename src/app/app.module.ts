@@ -23,7 +23,12 @@ import { HondaComponent } from './honda/honda.component';
 import { SingleProductComponent } from './honda/single-product/single-product.component';
 import { ViewProductComponent } from './honda/view-product/view-product.component';
 import { CarouselModule } from 'primeng/carousel';
-import { HondasortPipe } from '../shared/hondasort.pipe';
+import { HondasortPipe } from '../shared/sort.pipe';
+import { ProductListComponent } from './honda/product-list/product-list.component';
+import { UniformsComponent } from './uniforms/uniforms.component';
+import { SingleItemComponent } from './uniforms/single-item/single-item.component';
+import { ViewItemComponent } from './uniforms/view-item/view-item.component';
+import { ItemsListComponent } from './uniforms/items-list/items-list.component';
 
 
 @NgModule({
@@ -42,6 +47,11 @@ import { HondasortPipe } from '../shared/hondasort.pipe';
     SingleProductComponent,
     ViewProductComponent,
     HondasortPipe,
+    ProductListComponent,
+    UniformsComponent,
+    SingleItemComponent,
+    ViewItemComponent,
+    ItemsListComponent,
   ],
   imports: [
     BrowserModule,

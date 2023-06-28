@@ -1,7 +1,3 @@
-.row {
-    width: 100%;
-}
-
 .page1 {
     background-image: url("/assets/images/honda-1.jpg");
     background-size: cover;
@@ -47,13 +43,14 @@
     font-weight: 700;
 }
 
-.p4 {
+.total {
     font-family: proxima;
     font-size: 16px;
     color: #878b94;
+    font-weight: 100;
 }
 
-#sort {
+#sort1 {
     border: 1px solid #d5d6d9;
     padding: 8px 13px;
     font-size: 13px;
@@ -66,9 +63,16 @@
     border-radius: 2px;
 }
 
-#sort option{
+#sort1 option{
     color: black;
     font-family: proxima;
     font-weight:normal;
     padding: 16px;
+}
+
+.p4{
+    font-family: proxima;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
 }

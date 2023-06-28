@@ -1,0 +1,122 @@
+<section class="page1">
+    <div class="container" *ngFor="let mat of itemsData">
+        <div class="row">
+            <div class="col-6">
+                <img src="{{mat.imgurl}}" alt="material" width="500px" height="500px">
+            </div>
+            <div class="col-6 text-start" id="list1">
+                <h1>{{ mat.text }}</h1>
+                <p>Product Code: {{ mat.pcode }}</p>
+                <p>Brand: {{ mat.brand }}</p>
+                <p>Sold By: {{ mat.soldby }}</p>
+                <span class="price">
+                    {{ mat.price | currency : "INR" : "symbol" : "3.0" }}
+                </span>
+                <span class="originalprice">
+                    <s><small>{{mat.originalprice | currency : "INR" : "symbol" : "3.0" }}</small></s></span>
+                <br />
+                <br />
+                <span *ngIf="mat.offerpercent" class="offer"> {{ mat.offerpercent }}% OFF </span>
+                <hr>
+                <div *ngIf="mat.pcode==='CIDCSH1220' || mat.pcode==='NHJMP2222' || mat.pcode==='NHSKT0818' || mat.pcode==='NHBTRS3224' ||
+                mat.pcode==='CIDCTR3022' || mat.pcode==='NHCPR1422' || mat.pcode==='NHCRG4442' || 
+                mat.pcode==='NHBSH0818';else size">
+                    <span class="length">Length:</span>
+                    <select class="dropdown">
+                        <option value="0" disabled>Please select</option>
+                        <option *ngFor="let l of mat.length" value="{{l}}">{{l}}</option>
+                    </select>
+                    <br />
+                    <br />
+                    <span class="waist">Waist:</span>
+                    <select class="dropdown">
+                        <option value="0" disabled>Please select</option>
+                        <option *ngFor="let w of mat.waist" value="{{w}}">{{w}}</option>
+                    </select>
+                </div>
+                <ng-template #size>
+                    <div *ngIf="mat.pcode==='NHSGSHXXS' || mat.pcode==='NHSBSHXXS' || mat.pcode==='NHNKTIFR' || 
+                mat.pcode==='NHBLT_FREE' || mat.pcode==='NHSOK2';else other">
+                        <span class="size">Size:</span>
+                        <select class="dropdown">
+                            <option value="0" disabled>Please select</option>
+                            <option *ngFor="let s1 of mat.size1" value="{{s1}}">{{s1}}</option>
+                        </select>
+                    </div>
+                    <ng-template #other>
+                        <span class="size">Size:</span>
+                        <select class="dropdown">
+                            <option value="0" disabled>Please select</option>
+                            <option *ngFor="let s of mat.size" value="{{s}}">{{s}}</option>
+                        </select>
+                    </ng-template>
+                </ng-template>
+                <hr>
+                <div *ngIf="mat.id===8 || mat.id===17 || mat.id===27 || mat.id===33 || mat.id===37 
+                || mat.id===39 || mat.id===42 || mat.id===43;else available">
+                <span class="out">Out of Stock</span>
+            </div>
+                <ng-template #available>
+                <span class="quantity">Quantity</span>
+                <input id="amt" type="number" min="1" step="1" value="1">
+                <br>
+                <br>
+                <div class="form d-flex">
+                    <button type="button" id="btn1" class="me-2">Add to Cart</button>
+                    <button type="button" id="btn2">Buy Now</button>
+                </div>
+            </ng-template>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <span class="description">Description of product</span>
+            <p id="policy">{{mat.policy}}</p>
+            <div *ngIf="mat.id===3 || mat.id===5 || mat.id===6 || mat.id===8">
+                <ul>
+                    <li>{{mat.p1}}</li>
+                    <li>{{mat.p2}}</li>
+                    <li>{{mat.p3}}</li>
+                    <li>{{mat.p4}}</li>
+                    <li>{{mat.p5}}</li>
+                </ul>
+            </div>
+            <div id="des2" *ngIf="mat.id===10 || mat.id===31">
+                <ul>
+                    <li>{{mat.p1}}</li>
+                    <li>{{mat.p2}}</li>
+                    <li>{{mat.p3}}</li>
+                    <li>{{mat.p4}}</li>
+                </ul>
+            </div>
+            <div id="des3" *ngIf="mat.id===39 || mat.id===40">
+                <ul>
+                    <li>{{mat.p1}}</li>
+                    <li>{{mat.p2}}</li>
+                </ul>
+            </div>
+            <div id="des4" *ngIf="mat.id===41">
+                <ul>
+                    <li>{{mat.p1}}</li>
+                    <li>{{mat.p2}}</li>
+                    <li>{{mat.p3}}</li>
+                </ul>
+            </div>
+            <div id="des5" *ngIf="mat.id===42">
+                <ul>
+                    <li>{{mat.p1}}</li>
+                </ul>
+            </div>
+            <div *ngIf="mat.id===14;else oneline">
+                <p id="des6">{{mat.t1}}</p>
+                <p id="des7">{{mat.t2}}</p>
+                <p id="des8">{{mat.t3}}</p>
+            </div>
+            <ng-template #oneline>
+                <p id="des1">{{mat.description}}</p>
+            </ng-template>
+        </div>
+    </div>
+    <div class="container">
+        <app-items-list></app-items-list>
+    </div>
+</section>

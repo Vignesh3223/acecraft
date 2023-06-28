@@ -8,6 +8,8 @@ import { EnterpriseComponent } from './enterprise/enterprise.component';
 import { SchoolComponent } from './school/school.component';
 import { HondaComponent } from './honda/honda.component';
 import { ViewProductComponent } from './honda/view-product/view-product.component';
+import { UniformsComponent } from './uniforms/uniforms.component';
+import { ViewItemComponent } from './uniforms/view-item/view-item.component';
 const routes: Routes = [
   {
     path: '', component: HomeComponent
@@ -33,7 +35,12 @@ const routes: Routes = [
   {
     path: 'viewProduct/:id', component: ViewProductComponent
   },
- 
+  {
+    path: 'uniforms', component: UniformsComponent
+  },
+  {
+    path: 'viewItem/:id', component: ViewItemComponent
+  },
 
 ];
 

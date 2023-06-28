@@ -1,0 +1,17 @@
+.related {
+    font-family: proxima;
+    font-size: 16px;
+    padding: 10px;
+    background: whitesmoke;
+    border: 1px solid #f1f1f1;
+}
+
+.p-reset{
+    display: none;
+}
+
+.title{
+    font-size: 14px;
+    font-family: proxima;
+    font-weight: bold;
+}

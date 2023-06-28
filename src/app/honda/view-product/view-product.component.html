@@ -1,70 +1,63 @@
 <section class="page1">
-    <div class="container" *ngFor="let prod of productsData">
-        <div class="row">
-            <div class="col-6 text-center">
-                <img src="{{prod.image}}" alt="product">
-            </div>
-            <div class="col-6 text-start" id="list1">
-                <h1>{{ prod.text }}</h1>
-                <p>Product Code: {{ prod.pcode }}</p>
-                <p>Brand: {{ prod.brand }}</p>
-                <p>Sold By: {{ prod.soldby }}</p>
-                <span class="price">
-                    {{ prod.price | currency : "INR" : "symbol" : "3.0" }}
-                </span>
-                <span class="originalprice">
-                    <s><small>{{prod.originalprice | currency : "INR" : "symbol" : "3.0" }}</small></s></span>
-                <br />
-                <br />
-                <span *ngIf="prod.offerpercent" class="offer"> {{ prod.offerpercent }}% OFF </span>
-                <hr>
-                <div *ngIf="prod.pcode!='HNDC-SALES/CW'">
-                    <span class="gender">GENDER:</span>
-                    <select class="dropdown">
-                        <option value="0" disabled>Please select</option>
-                        <option *ngFor="let g of prod.gender" value="{{g}}">{{g}}</option>
-                    </select>
-                </div>
-                <div *ngIf="prod.pcode==='HNDC-SALES/CW'">
-                    <span class="dept">DEPARTMENT:</span>
-                    <select class="dropdown">
-                        <option value="0" disabled>Please select</option>
-                        <option *ngFor="let d of prod.department" value="{{d}}">{{d}}</option>
-                    </select>
-                </div>
-                <hr>
-                <span class="quantity">Quantity</span>
-                <input id="amt" type="number" min="1" step="1" value="1">
-                <br>
-                <br>
-                <div class="form d-flex">
-                    <button type="button" id="btn1" class="me-2">Add to Cart</button>
-                    <button type="button" id="btn2">Buy Now</button>
-                </div>
-            </div>
+  <div class="container" *ngFor="let prod of productsData">
+    <div class="row">
+      <div class="col-6 text-center">
+        <img src="{{prod.image}}" alt="product">
+      </div>
+      <div class="col-6 text-start" id="list1">
+        <h1>{{ prod.text }}</h1>
+        <p>Product Code: {{ prod.pcode }}</p>
+        <p>Brand: {{ prod.brand }}</p>
+        <p>Sold By: {{ prod.soldby }}</p>
+        <span class="price">
+          {{ prod.price | currency : "INR" : "symbol" : "3.0" }}
+        </span>
+        <span class="originalprice">
+          <s><small>{{prod.originalprice | currency : "INR" : "symbol" : "3.0" }}</small></s></span>
+        <br />
+        <br />
+        <span *ngIf="prod.offerpercent" class="offer"> {{ prod.offerpercent }}% OFF </span>
+        <hr>
+        <div *ngIf="prod.pcode!='HNDC-SALES/CW'">
+          <span class="gender">GENDER:</span>
+          <select class="dropdown">
+            <option value="0" disabled>Please select</option>
+            <option *ngFor="let g of prod.gender" value="{{g}}">{{g}}</option>
+          </select>
         </div>
-        <div class="row mt-5">
-            <span class="description">Description of product</span>
-            <p id="des1">{{prod.description}}</p>
+        <div *ngIf="prod.pcode==='HNDC-SALES/CW'">
+          <span class="dept">DEPARTMENT:</span>
+          <select class="dropdown">
+            <option value="0" disabled>Please select</option>
+            <option *ngFor="let d of prod.department" value="{{d}}">{{d}}</option>
+          </select>
         </div>
-    </div>
-    <div class="container">
-        <div class="row mt-5">
-          <span class="related">Related Products</span>
-          <div class="card">
-            <p-carousel [numVisible]="4" [numScroll]="3" [circular]="false">
-              <ng-template let-prod pTemplate="item">
-                <div class="border-1 surface-border border-round m-2 text-center py-5 px-3">
-                  <div class="mb-3">
-                    <img [src]="prod.image" alt="image" width="250px" height="300px">
-                  </div>
-                  <div>
-                    <h4 class="mb-1">{{ prod.name }}</h4>
-                  </div>
-                </div>
-              </ng-template>
-            </p-carousel>
-          </div>
+        <hr>
+        <span class="quantity">Quantity</span>
+        <input id="amt" type="number" min="1" step="1" value="1">
+        <br>
+        <br>
+        <div class="form d-flex">
+          <button type="button" id="btn1" class="me-2">Add to Cart</button>
+          <button type="button" id="btn2">Buy Now</button>
         </div>
       </div>
+    </div>
+    <div class="row mt-5">
+      <span class="description">Description of product</span>
+      <p id="des1">{{prod.description}}</p>
+      <div *ngIf="prod.pcode==='HNDC-SALES/W'">
+        <p id="head1">{{prod.header1}}</p>
+        <p id="des2">{{prod.content1}}</p>
+        <p id="des2">{{prod.content2}}</p>
+        <p id="des2">{{prod.content3}}</p>
+        <p id="head2">{{prod.header2}}</p>
+        <p id="des3">{{prod.content4}}</p>
+        <p id="des3">{{prod.content5}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <app-product-list></app-product-list>
+  </div>
 </section>
