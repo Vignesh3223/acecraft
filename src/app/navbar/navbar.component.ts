@@ -8,7 +8,7 @@ import { CartserviceService } from 'src/services/cartservice.service';
 })
 export class NavbarComponent implements OnInit {
 
-  cartcount!: number;
+  cartcount: number|any;
 
   constructor(private cartserv: CartserviceService) { }
 

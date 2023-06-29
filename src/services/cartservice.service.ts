@@ -42,8 +42,7 @@ export class CartserviceService {
       timerProgressBar: true,
     })
     Toast.fire({
-      icon: 'success',
-      title: 'Item updated successfully'
+      title: 'Quantity updated successfully'
     })
   }
   )

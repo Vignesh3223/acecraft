@@ -1,11 +1,11 @@
 <section class="page1">
-    <!-- <div class="container" *ngIf="'Cart.length==0';else cartitems" style="padding-bottom: 400px;">
+    <div class="container" *ngIf="cart.length==0;else cartitems" style="padding-bottom: 400px;">
         <div class="row">
             <h3 class="empty">Your shopping cart is empty!</h3>
             <button id="btn1" routerLink=''>Continue Shopping</button>
         </div>
-    </div> -->
-    <!-- <ng-template #cartitems> -->
+    </div>
+    <ng-template #cartitems>
     <div class="container text-center">
         <h1 class="total">Your bag total is {{ totalPrice(cart) | currency : "INR" : "symbol" : "3.0" }}</h1>
         <hr>
@@ -68,5 +68,5 @@
             </div>
         </div>
     </div>
-    <!-- </ng-template> -->
+    </ng-template>
 </section>

@@ -58,8 +58,7 @@ export class ViewItemComponent implements OnInit {
     })
 
     Toast.fire({
-      icon: 'success',
-      title: 'Item added successfully'
+      title: 'Product added successfully'
     })
     this.cartserv.getCount();
   }
