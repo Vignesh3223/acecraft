@@ -20,25 +20,25 @@
         <hr>
         <div *ngIf="prod.pcode!='HNDC-SALES/CW'">
           <span class="gender">GENDER:</span>
-          <select class="dropdown">
+          <select [(ngModel)]="carts.gender" class="dropdown">
             <option value="0" disabled>Please select</option>
             <option *ngFor="let g of prod.gender" value="{{g}}">{{g}}</option>
           </select>
         </div>
         <div *ngIf="prod.pcode==='HNDC-SALES/CW'">
           <span class="dept">DEPARTMENT:</span>
-          <select class="dropdown">
+          <select [(ngModel)]="carts.department" class="dropdown">
             <option value="0" disabled>Please select</option>
             <option *ngFor="let d of prod.department" value="{{d}}">{{d}}</option>
           </select>
         </div>
         <hr>
         <span class="quantity">Quantity</span>
-        <input id="amt" type="number" min="1" step="1" value="1">
+        <input id="amt" [(ngModel)]="quantity" type="number" min="1" step="1" value="1">
         <br>
         <br>
         <div class="form d-flex">
-          <button type="button" id="btn1" class="me-2">Add to Cart</button>
+          <button (click)="addtoCart(prod)" type="button" id="btn1" class="me-2">Add to Cart</button>
           <button type="button" id="btn2">Buy Now</button>
         </div>
       </div>

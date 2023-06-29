@@ -28,3 +28,46 @@ ul li {
     font-family: proxima;
     font-size: 15px;
 }
+
+.setitems {
+    display: none
+}
+
+.setting {
+    cursor: pointer;
+}
+
+.setting:hover .setitems {
+    display: block;
+}
+
+.setitems {
+    z-index: 1;
+    cursor: pointer;
+    position: absolute;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(4, 1, 49) 100%);
+    color: #978F8F;
+    height: 200vh;
+    left: 80%;
+    width: 350px;
+}
+
+.setitems {
+    list-style-type: none;
+}
+
+.setitems a {
+    text-decoration: none;
+}
+
+.setitems li {
+    color: #978F8F;
+    font-family: proxima;
+    font-size: 25px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.setitems li:hover {
+    color: white;
+}

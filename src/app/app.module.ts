@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
@@ -29,7 +31,10 @@ import { UniformsComponent } from './uniforms/uniforms.component';
 import { SingleItemComponent } from './uniforms/single-item/single-item.component';
 import { ViewItemComponent } from './uniforms/view-item/view-item.component';
 import { ItemsListComponent } from './uniforms/items-list/items-list.component';
-
+import { CartitemComponent } from './cartitem/cartitem.component';
+import { UserComponent } from './user/user.component';
+import { LoginComponent } from './user/login/login.component';
+import { RegisterComponent } from './user/register/register.component';
 
 @NgModule({
   declarations: [
@@ -52,11 +57,17 @@ import { ItemsListComponent } from './uniforms/items-list/items-list.component';
     SingleItemComponent,
     ViewItemComponent,
     ItemsListComponent,
+    CartitemComponent,
+    UserComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     BadgeModule,
     SplitterModule,

@@ -1,0 +1,117 @@
+.page1 {
+    background-color: white;
+    padding: 150px 0 30px 0;
+}
+
+.total {
+    font-family: proxima;
+    color: #000000;
+}
+
+.name,
+.price {
+    font-family: proxima;
+    color: #000000;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.quantity {
+    border: 1px solid #e2dddd;
+    font-family: proxima;
+    color: #000000;
+    background: transparent;
+    font-size: 18px;
+    padding: 1px 2px;
+    font-weight: 200;
+    width: 35px;
+    height: 25px;
+}
+
+.decrement,
+.increment {
+  cursor: pointer;
+}
+
+.size {
+    font-family: proxima;
+    color: #000000;
+    font-size: 15px;
+}
+
+.empty {
+    font-family: proxima;
+    color: #000000;
+}
+
+#remove {
+    font-family: proxima;
+    color: #FF0000;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+
+#btn1 {
+    border: 1px solid black;
+    border-radius: 0;
+    color: #000000;
+    background-color: white;
+    font-family: proxima;
+    font-size: 15px;
+    width: 153px;
+    height: 36px;
+    padding: 5px;
+    margin-top: 1.5em;
+    margin-left: 1em;
+}
+
+.code {
+    font-family: proxima;
+    color: #000000;
+    font-size: 19px;
+}
+
+#btn2 {
+    border: 1px solid black;
+    color: #000000;
+    background: transparent;
+    font-family: proxima;
+    padding: 7px 15px 4px 15px;
+    font-size: 15px;
+
+}
+
+#sub {
+    font-family: proxima;
+    font-size: 20px;
+    color: #808080;
+    font-weight: 700;
+    margin-top: 2em;
+}
+
+#tot {
+    font-family: proxima;
+    font-size: 25px;
+    color: #000000;
+    font-weight: 700;
+}
+
+#inp {
+    width: 250px;
+    height: 35px;
+}
+
+#btn3 {
+    margin-left: 70px;
+}
+
+#btn3,
+#btn4 {
+    border: 1px solid black;
+    font-family: proxima;
+    font-size: 18px;
+    color: #000000;
+    background: transparent;
+    padding: 5px;
+}

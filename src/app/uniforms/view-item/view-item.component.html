@@ -2,7 +2,7 @@
     <div class="container" *ngFor="let mat of itemsData">
         <div class="row">
             <div class="col-6">
-                <img src="{{mat.imgurl}}" alt="material" width="500px" height="500px">
+                <img src="{{mat.image}}" alt="material" width="500px" height="500px">
             </div>
             <div class="col-6 text-start" id="list1">
                 <h1>{{ mat.text }}</h1>
@@ -18,6 +18,10 @@
                 <br />
                 <span *ngIf="mat.offerpercent" class="offer"> {{ mat.offerpercent }}% OFF </span>
                 <hr>
+                <button type="button" id="btn3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    SIZE GUIDE</button>
+                <br />
+                <br />
                 <div *ngIf="mat.pcode==='CIDCSH1220' || mat.pcode==='NHJMP2222' || mat.pcode==='NHSKT0818' || mat.pcode==='NHBTRS3224' ||
                 mat.pcode==='CIDCTR3022' || mat.pcode==='NHCPR1422' || mat.pcode==='NHCRG4442' || 
                 mat.pcode==='NHBSH0818';else size">
@@ -38,14 +42,14 @@
                     <div *ngIf="mat.pcode==='NHSGSHXXS' || mat.pcode==='NHSBSHXXS' || mat.pcode==='NHNKTIFR' || 
                 mat.pcode==='NHBLT_FREE' || mat.pcode==='NHSOK2';else other">
                         <span class="size">Size:</span>
-                        <select class="dropdown">
+                        <select [(ngModel)]="carts.size1" class="dropdown">
                             <option value="0" disabled>Please select</option>
                             <option *ngFor="let s1 of mat.size1" value="{{s1}}">{{s1}}</option>
                         </select>
                     </div>
                     <ng-template #other>
                         <span class="size">Size:</span>
-                        <select class="dropdown">
+                        <select [(ngModel)]="carts.size" class="dropdown">
                             <option value="0" disabled>Please select</option>
                             <option *ngFor="let s of mat.size" value="{{s}}">{{s}}</option>
                         </select>
@@ -54,18 +58,18 @@
                 <hr>
                 <div *ngIf="mat.id===8 || mat.id===17 || mat.id===27 || mat.id===33 || mat.id===37 
                 || mat.id===39 || mat.id===42 || mat.id===43;else available">
-                <span class="out">Out of Stock</span>
-            </div>
-                <ng-template #available>
-                <span class="quantity">Quantity</span>
-                <input id="amt" type="number" min="1" step="1" value="1">
-                <br>
-                <br>
-                <div class="form d-flex">
-                    <button type="button" id="btn1" class="me-2">Add to Cart</button>
-                    <button type="button" id="btn2">Buy Now</button>
+                    <span class="out">Out of Stock</span>
                 </div>
-            </ng-template>
+                <ng-template #available>
+                    <span class="quantity">Quantity</span>
+                    <input name="quantity" [(ngModel)]="quantity" id="amt" type="number" min="1" step="1" value="1">
+                    <br>
+                    <br>
+                    <div class="form d-flex">
+                        <button (click)="addtoCart(mat)" type="button" id="btn1" class="me-2">Add to Cart</button>
+                        <button type="button" id="btn2">Buy Now</button>
+                    </div>
+                </ng-template>
             </div>
         </div>
         <div class="row mt-5">
@@ -120,3 +124,31 @@
         <app-items-list></app-items-list>
     </div>
 </section>
+<div class="modal fade modal-xl" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title" id="exampleModalLabel">acecraft</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" *ngFor="let mat of itemsData">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="/assets/images/size-guide.png" alt="size-giude">
+                    </div>
+                    <div class="col-2"></div>
+                    <div class="col-4">
+                        <img src="{{mat.image}}" alt="dress" width="300px" height="350px">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-6" id="footer">
+                        All sizes are approximate with an international tolerance 0f +/- 1 inch.<br>
+                        Sizes mentioned are sizes of actual garment.<br>
+                        All sizes are in inches.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

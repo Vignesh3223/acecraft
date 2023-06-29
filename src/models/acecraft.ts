@@ -20,6 +20,7 @@ export interface Honda {
     originalprice: number;
     offerpercent: number;
     gender: string[];
+    quantity: number[];
     department: string[];
     description: string[];
     header1: string;
@@ -31,9 +32,9 @@ export interface Honda {
     content5: string;
 }
 
-export interface Uniforms{
+export interface Uniforms {
     id: number;
-    imgurl: string;
+    image: string;
     text: string;
     pcode: string;
     brand: string;
@@ -41,18 +42,34 @@ export interface Uniforms{
     price: number;
     originalprice: number;
     offerpercent: number;
-    size:number[];
-    size1:string[];
-    length:number[];
-    waist:number[];
-    policy:string;
-    description:string;
-    p1:string;
-    p2:string;
-    p3:string;
-    p4:string;
-    p5:string;
-    t1:string;
-    t2:string;
-    t3:string;
+    size: number[];
+    size1: string[];
+    length: number[];
+    waist: number[];
+    quantity: number[];
+    policy: string;
+    description: string;
+    p1: string;
+    p2: string;
+    p3: string;
+    p4: string;
+    p5: string;
+    t1: string;
+    t2: string;
+    t3: string;
+}
+
+export interface Cart {
+    id: number | any;
+    text: string | undefined;
+    image: string | undefined;
+    size: number | any;
+    size1: string | undefined;
+    gender: string | undefined;
+    department: string | undefined;
+    quantity: number | any;
+    price:number|any;
+    totalprice: number | any;
+    originalprice: number | any;
+    offerpercent: number | any;
 }

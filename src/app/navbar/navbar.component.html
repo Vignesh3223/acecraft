@@ -31,11 +31,30 @@
                                 <a class="nav-link" routerLink='/airenmask'>AIREN MASK</a>
                             </li>
                         </ul>
-                        <i class="pi pi-cog p-3" style="font-size: 2rem;color: white;"></i>
-                        <i class="pi pi-shopping-cart mr-4" pBadge style="font-size: 2rem;color: white;" value="0"></i>
+                        <div class="setting">
+                            <i class="pi pi-cog p-3" style="font-size: 2rem;color: white;"></i>
+                            <ul class="setitems">
+                                <a routerLink='/user/login'>
+                                    <li>Sign in | <i class="fa-solid fa-right-to-bracket" style="color: #978F8F;"></i>
+                                    </li>
+                                </a>
+                                <a routerLink='/user/register'>
+                                    <li>Register | <i class="fa-solid fa-user-plus" style="color: #978F8F;"></i></li>
+                                </a>
+                                <a routerLink=''>
+                                    <li>Order Status | <i class="fa-solid fa-box" style="color: #978F8F;"></i></li>
+                                </a>
+                                <a routerLink=''>
+                                    <li>Contact | <i class="fa-solid fa-comments" style="color: #978F8F;"></i></li>
+                                </a>
+                            </ul>
+                        </div>
+                        <a routerLink="/cartitems"><i class="pi pi-shopping-cart mr-4" pBadge
+                                style="font-size: 2rem;color: white;" value="{{cartcount}}"></i></a>
                     </div>
                 </div>
             </div>
+
         </div>
     </nav>
 </div>

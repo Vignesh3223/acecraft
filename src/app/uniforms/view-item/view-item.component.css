@@ -95,6 +95,15 @@
     margin-top: 50px;
 }
 
+#btn3 {
+    background-color: #000000;
+    border: 1px solid black;
+    border-radius: 3px;
+    color: #FFFFFF;
+    font-family: proxima;
+    font-size: 13px;
+}
+
 .description {
     font-family: proxima;
     font-size: 16px;
@@ -133,24 +142,36 @@
     margin-top: -0.5em;
 }
 
-#des6,#des7{
+#des6,
+#des7 {
     font-family: proxima;
     font-size: 14px;
     font-weight: 700;
     color: #000000;
     line-height: 0.8;
 }
-#des6{
+
+#des6 {
     margin-top: -1.5em;
 }
 
-.out{
+.out {
     background-color: #000000;
     color: #FFFFFF;
     font-family: proxima;
     font-size: 14px;
-    border:1px solid black;
+    border: 1px solid black;
     border-radius: 0%;
     text-align: center;
     padding: 10px 230px 10px 230px;
+}
+
+.modal-title {
+    font-family: proxima;
+    letter-spacing: 10px;
+    margin-left: 40%;
+}
+
+#footer-line{
+    padding-left: -10em;
 }
