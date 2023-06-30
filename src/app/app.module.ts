@@ -32,9 +32,8 @@ import { SingleItemComponent } from './uniforms/single-item/single-item.componen
 import { ViewItemComponent } from './uniforms/view-item/view-item.component';
 import { ItemsListComponent } from './uniforms/items-list/items-list.component';
 import { CartitemComponent } from './cartitem/cartitem.component';
-import { UserComponent } from './user/user.component';
-import { LoginComponent } from './user/login/login.component';
-import { RegisterComponent } from './user/register/register.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +57,6 @@ import { RegisterComponent } from './user/register/register.component';
     ViewItemComponent,
     ItemsListComponent,
     CartitemComponent,
-    UserComponent,
     LoginComponent,
     RegisterComponent,
   ],

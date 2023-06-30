@@ -11,9 +11,9 @@ import { ViewProductComponent } from './honda/view-product/view-product.componen
 import { UniformsComponent } from './uniforms/uniforms.component';
 import { ViewItemComponent } from './uniforms/view-item/view-item.component';
 import { CartitemComponent } from './cartitem/cartitem.component';
-import { UserComponent } from './user/user.component';
-import { LoginComponent } from './user/login/login.component';
-import { RegisterComponent } from './user/register/register.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+
 const routes: Routes = [
   {
     path: '', component: HomeComponent
@@ -49,15 +49,10 @@ const routes: Routes = [
     path: 'cartitems', component: CartitemComponent
   },
   {
-    path: 'user', component: UserComponent,
-    children: [
-      {
-        path: 'login', component: LoginComponent
-      },
-      {
-        path: 'register', component: RegisterComponent
-      }
-    ]
+    path: 'login', component: LoginComponent
+  },
+  {
+    path: 'register', component: RegisterComponent
   }
 ];
 

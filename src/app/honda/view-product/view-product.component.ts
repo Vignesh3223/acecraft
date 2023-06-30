@@ -22,7 +22,7 @@ export class ViewProductComponent implements OnInit {
   ) { }
 
   carts: Cart = {
-    id: 0,
+    id:0,
     text: '',
     image: '',
     size: 0,

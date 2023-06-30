@@ -15,7 +15,7 @@ export class CartitemComponent implements OnInit {
   constructor(private cartserv: CartserviceService, private router: Router) { }
 
   carts: Cart = {
-    id: 0,
+    id:0,
     text: '',
     image: '',
     size: 1,

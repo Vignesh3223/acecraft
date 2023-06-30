@@ -73,3 +73,19 @@ export interface Cart {
     originalprice: number | any;
     offerpercent: number | any;
 }
+
+export interface User {
+    id:number|any;
+    firstname:string|undefined;
+    lastname:string|undefined;
+    email:string|undefined;
+    password:string|undefined;
+    confirmpassword:string|undefined;
+    profession:string|undefined;
+    dealername : string|undefined;
+    dealercode:number|any;
+    city : string|undefined;
+    state : string|undefined;
+    gstnumber : string|undefined;
+    logged : boolean|undefined;
+}

@@ -36,8 +36,8 @@ export class ViewItemComponent implements OnInit {
     offerpercent: 0
   }
   quantity: number = 1;
-  size: number|undefined;
-  size1:string|undefined;
+  size: number | undefined;
+  size1: string | undefined;
 
   addtoCart(item: any) {
     this.carts.id = item.id;
