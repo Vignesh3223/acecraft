@@ -7,6 +7,9 @@ import { AceServiceService } from 'src/services/ace-service.service';
   styleUrls: ['./uniforms.component.css']
 })
 export class UniformsComponent {
+
+  itemcount:number|any;
+  
   constructor(private aceService: AceServiceService) { }
 
   uniformlist: any[] = [];
@@ -34,5 +37,9 @@ export class UniformsComponent {
   ngOnInit() {
     this.aceService.getUniform().subscribe(
       (response) => this.uniformlist = response);
+
+      this.aceService.getUniform().subscribe((res) => {
+        this.itemcount = res.length;
+      });
   }
 }

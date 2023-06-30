@@ -8,6 +8,8 @@ import { AceServiceService } from 'src/services/ace-service.service';
 })
 export class HondaComponent {
 
+  itemcount: number | any;
+
   constructor(private aceService: AceServiceService) { }
 
   hondalist: any[] = [];
@@ -36,5 +38,9 @@ export class HondaComponent {
   ngOnInit() {
     this.aceService.getHonda().subscribe(
       (response) => this.hondalist = response);
+
+      this.aceService.getHonda().subscribe((res) => {
+        this.itemcount = res.length;
+      });
   }
 }
