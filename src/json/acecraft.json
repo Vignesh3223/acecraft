@@ -2120,19 +2120,6 @@
   ],
   "carts": [
     {
-      "id": 1,
-      "text": "NHIS Day Wear Polo [Boys & Girls, Nursery-Grade 5]",
-      "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627bd600820ea897cb5a5cfc/webp/day-wear-polos-480x480.jpg",
-      "size": "22",
-      "size1": "",
-      "gender": "",
-      "department": "",
-      "quantity": 1,
-      "price": 340,
-      "originalprice": 0,
-      "offerpercent": 0
-    },
-    {
       "id": 9,
       "text": "HONDA CARS | SUPPORT STAFF- County Shirts",
       "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/648c80c9576be1481b336ae9/webp/hndc-support-staff-shirt-480x480.png",
@@ -2144,7 +2131,21 @@
       "price": 420,
       "originalprice": 0,
       "offerpercent": 0
+    },
+    {
+      "id": 11,
+      "text": "NHG Jumpers [Girls, Grade 1-4]",
+      "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f01491c2e5ab32f33869/images/5aa0f01491c2e5ab32f3386a/5aa0f01e91c2e5ab32f338a4/webp/5aa0f01e91c2e5ab32f338a4-640x640.jpg",
+      "size": 0,
+      "size1": "",
+      "gender": "",
+      "department": "",
+      "quantity": 1,
+      "price": 605,
+      "originalprice": 0,
+      "offerpercent": 0
     }
   ],
-  "users": []
+  "users": [
+  ]
 }

@@ -62,7 +62,7 @@ export class CartitemComponent implements OnInit {
 
   delete(deleteItem: Cart) {
     this.cartserv.removeItemFromCart(deleteItem).subscribe(
-      () => console.log(deleteItem.text)
+      () => console.log(deleteItem.id)
     );
     const Toast = Swal.mixin({
       toast: true,

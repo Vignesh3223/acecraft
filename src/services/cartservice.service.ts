@@ -22,11 +22,6 @@ export class CartserviceService {
     });
   }
 
-  getitems(){
-    return this.http.get<Cart[]>(this.carturl);
-  }
-
-
   getCartItems() {
     return this.http.get<Cart[]>(this.carturl);
   }

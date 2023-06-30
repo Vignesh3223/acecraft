@@ -1,0 +1,110 @@
+<section class="page1">
+    <div class="container wrapper">
+        <div class="container">
+            <form #regform="ngForm" (ngSubmit)="regform.form.valid && onSubmit(regform)" novalidate>
+                <h2 class="title text-center mb-3">Signup with ACECRAFT</h2>
+                <div class="form-group mb-3">
+                    <input type="text" class="form-control" name="firstname" placeholder="First Name"
+                        [(ngModel)]="demo.firstname" #firstname="ngModel"
+                        [ngClass]="{ 'is-invalid': regform.submitted && firstname.invalid }" required minlength="4"
+                        maxlength="12" pattern="^[a-zA-Z ]+$" />
+                    <div class="invalid-feedback" *ngIf="regform.submitted && firstname.invalid">
+                        <p *ngIf="firstname.errors?.['required']">Required Field</p>
+                        <p *ngIf="firstname.errors?.['minlength']">Firstname must contain atleast 4 characters</p>
+                        <p *ngIf="firstname.errors?.['maxlength']">Firstname must not exceed 12 characters</p>
+                        <p *ngIf="firstname.errors?.['pattern']">Firstname must contain only alphabets</p>
+                    </div>
+                </div>
+                <div class="form-group mb-3">
+                    <input type="text" class="form-control" name="lastname" placeholder="Last Name"
+                        [(ngModel)]="demo.lastname" #lastname="ngModel"
+                        [ngClass]="{ 'is-invalid': regform.submitted && lastname.invalid }" required minlength="4"
+                        maxlength="12" pattern="^[a-zA-Z ]+$" />
+                    <div class="invalid-feedback" *ngIf="regform.submitted && lastname.invalid">
+                        <p *ngIf="lastname.errors?.['required']">Required Field</p>
+                        <p *ngIf="lastname.errors?.['minlength']">Larstname must contain atleast 4 characters</p>
+                        <p *ngIf="lastname.errors?.['maxlength']">Lastname must not exceed 12 characters</p>
+                        <p *ngIf="lastname.errors?.['pattern']">Lastname must contain only alphabets</p>
+                    </div>
+                </div>
+                <div class="form-group mb-3">
+                    <input type="email" class="form-control" name="email" placeholder="Email" [(ngModel)]="demo.email"
+                        #email="ngModel" [ngClass]="{ 'is-invalid': regform.submitted && email.invalid }" required
+                        email />
+                    <div class="invalid-feedback" *ngIf="regform.submitted && email.invalid">
+                        <p *ngIf="email.errors?.['required']">Enter a valid email</p>
+                        <p *ngIf="email.errors?.['email']">Enter a valid email address</p>
+                    </div>
+                </div>
+                <div class="form-group mb-3">
+                    <input type="password" class="form-control" name="password" placeholder="Password"
+                        [(ngModel)]="demo.password" #password="ngModel"
+                        [ngClass]="{ 'is-invalid': regform.submitted && password.invalid }" minlength="8" maxlength="16"
+                        required />
+                    <div *ngIf="regform.submitted && password.invalid" class="invalid-feedback">
+                        <p *ngIf="password.errors?.['required']">Required Field</p>
+                        <p *ngIf="password.errors?.['minlength']">Password should be at least 8 characters long</p>
+                        <p *ngIf="password.errors?.['maxlength']">Password should be less than 17 characters</p>
+                    </div>
+                </div>
+                <div class="form-group mb-3">
+                    <input type="password" class="form-control" name="confirmpassword" placeholder="Confirm Password"
+                        [(ngModel)]="demo.confirmpassword" #confirmpassword="ngModel"
+                        [ngClass]="{ 'is-invalid': regform.submitted && confirmpassword.invalid }" required />
+                    <div *ngIf="regform.submitted && confirmpassword.invalid" class="invalid-feedback">
+                        <p *ngIf="confirmpassword.errors?.['required']">Required Field</p>
+                    </div>
+                </div>
+                <div class="form-group ms-3 mb-3">
+                    <label><input type="radio" class="ms-5 me-1" name="profession" id="scl" value="School">School</label>
+                    <label><input type="radio" class="ms-5 me-1" name="profession" id="ent" value="Enterprise">Enterprise</label>
+                </div>
+                <div class="form-group mb-3">
+                    <input type="text" class="form-control" name="dealername" placeholder="Dealership Name"
+                        [(ngModel)]="demo.dealername" #dealername="ngModel"
+                        [ngClass]="{ 'is-invalid': regform.submitted && dealername.invalid }" required minlength="4"
+                        maxlength="16" pattern="^[a-zA-Z ]+$" />
+                    <div class="invalid-feedback" *ngIf="regform.submitted && dealername.invalid">
+                        <p *ngIf="dealername.errors?.['required']">Required Field</p>
+                        <p *ngIf="dealername.errors?.['minlength']">Dealership name must contain atleast 4 characters
+                        </p>
+                        <p *ngIf="dealername.errors?.['maxlength']">Dealership name must not exceed 12 characters</p>
+                        <p *ngIf="dealername.errors?.['pattern']">Dealership name must contain only alphabets</p>
+                    </div>
+                </div>
+                <div class="form-group mb-3">
+                    <input type="text" class="form-control" name="dealercode" placeholder="Dealership Number / Code"
+                        [(ngModel)]="demo.dealercode" #dealercode="ngModel"
+                        [ngClass]="{ 'is-invalid': regform.submitted && dealercode.invalid }" required minlength="10" />
+                    <div class="invalid-feedback" *ngIf="regform.submitted && dealercode.invalid">
+                        <p *ngIf="dealercode.errors?.['required']">Required Field
+                        </p>
+                        <p *ngIf="dealercode.errors?.['minlength']">Dealership code must contain 10 digits</p>
+                    </div>
+                </div>
+                <div class="form-group mb-3">
+                    <input type="text" class="form-control" placeholder="City">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="state">State</label><br />
+                    <select class="form-control" name="state" [(ngModel)]="demo.state">
+                        <option value="state" disabled> </option>
+                        <option *ngFor="let st of state" [value]="state" required>
+                            {{ st }}
+                        </option>
+                    </select>
+                </div>
+                <div class="form-group mb-3">
+                    <input type="text" class="form-control" placeholder="GST Number">
+                </div>
+                <div class="form-group mb-3">
+                    <button type="buttton" class="mt-1" id="btn1">
+                        Register </button>
+                </div>
+                <div class="form-group text-center">
+                    <span class="forgot">Already have an account?<span routerLink='/login' id="log">Login!</span></span>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
