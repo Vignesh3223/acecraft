@@ -51,7 +51,7 @@ export class RegisterComponent implements OnInit {
           title: 'Sign Up Success',
         });
         this.regform.reset();
-        this.router.navigate(['login']);
+        this.router.navigate(['/login']);
       });
   }
 }

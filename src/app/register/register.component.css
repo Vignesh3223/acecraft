@@ -50,3 +50,10 @@ input,select {
 #log {
     cursor: pointer;
 }
+
+.already{
+    font-family: proxima;
+    color: #978F8F;
+    font-size: 12px;
+    cursor:pointer;
+}

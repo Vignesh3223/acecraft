@@ -18,8 +18,8 @@ export class LoginComponent implements OnInit {
   userapi = environment.userapi;
 
   LoginForm!: FormGroup|any;
-  email: FormGroup | any;
-  password: FormGroup | any;
+  email: FormControl | any;
+  password: FormControl | any;
 
   submitted = false;
   get f() {

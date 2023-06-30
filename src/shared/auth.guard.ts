@@ -8,12 +8,10 @@ import { UserService } from "src/services/user.service";
   })
   export class AuthGuard implements CanActivate {
     isAuthenticated: boolean = false;
-    //constructor of userservice
     constructor(private authService: UserService, private router: Router) {}
   
-    canActivate(): // route: ActivatedRouteSnapshot,
-    // state: RouterStateSnapshot
-  
+    canActivate():
+   
       | Observable<boolean | UrlTree>
       | Promise<boolean | UrlTree>
       | boolean
@@ -25,7 +23,7 @@ import { UserService } from "src/services/user.service";
   
       if (this.isAuthenticated == false) {
         console.log('inside false ' + this.isAuthenticated);
-        this.router.navigate(['/signin']);
+        this.router.navigate(['/login']);
         return false;
       } else {
         console.log('next subscribed value:t3etg ' + this.isAuthenticated);
