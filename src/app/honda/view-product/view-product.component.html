@@ -46,7 +46,7 @@
     <div class="row mt-5">
       <span class="description">Description of product</span>
       <p id="des1">{{prod.description}}</p>
-      <div *ngIf="prod.pcode==='HNDC-SALES/W'">
+      <div *ngIf="prod.id===1 || prod.id===2 ">
         <p id="head1">{{prod.header1}}</p>
         <p id="des2">{{prod.content1}}</p>
         <p id="des2">{{prod.content2}}</p>

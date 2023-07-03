@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
   templateUrl: './single-item.component.html',
   styleUrls: ['./single-item.component.css']
 })
-export class SingleItemComponent {
+export class SingleItemComponent implements OnInit {
   @Input() item: any;
 
   constructor(

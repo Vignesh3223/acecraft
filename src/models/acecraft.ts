@@ -1,6 +1,36 @@
 export interface Notes {
     id: number;
     title: string;
+    p1: string;
+    p2: string;
+    p3: string;
+    p4: string;
+    p5: string;
+    p6: string;
+    p7: string;
+    header: string;
+    conclusion: string;
+    subhead1: string;
+    subhead2: string;
+    subhead3: string;
+    subhead4: string;
+    subhead5: string;
+    subhead6: string;
+    subhead7: string;
+    subhead8: string;
+    subhead9: string;
+    subhead10: string;
+    list1: string;
+    list2: string;
+    list3: string;
+    list4: string;
+    list5: string;
+    list6: string;
+    list7: string;
+    list8: string;
+    list9: string;
+    list10: string;
+    list11: string;
 }
 
 export interface Schools {
@@ -68,7 +98,7 @@ export interface Cart {
     gender: string | undefined;
     department: string | undefined;
     quantity: number | any;
-    price:number|any;
+    price: number | any;
     totalprice: number | any;
     originalprice: number | any;
     offerpercent: number | any;

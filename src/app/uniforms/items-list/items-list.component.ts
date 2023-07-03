@@ -11,7 +11,7 @@ export class ItemsListComponent {
 
   products: Uniforms[] | any;
 
-  constructor(private aceService: AceServiceService) { }
+  constructor(private aceService: AceServiceService,) { }
 
 
   ngOnInit() {

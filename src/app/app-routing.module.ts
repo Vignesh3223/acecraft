@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { AirenmaskComponent } from './airenmask/airenmask.component';
 import { CollegeComponent } from './college/college.component';
 import { NotesComponent } from './notes/notes.component';
+import { ViewnoteComponent } from './notes/viewnote/viewnote.component';
 import { EnterpriseComponent } from './enterprise/enterprise.component';
 import { SchoolComponent } from './school/school.component';
 import { HondaComponent } from './honda/honda.component';
@@ -26,6 +27,9 @@ const routes: Routes = [
   },
   {
     path: 'notes', component: NotesComponent
+  },
+  {
+    path: 'viewNote/:id', component: ViewnoteComponent
   },
   {
     path: 'enterprise', component: EnterpriseComponent

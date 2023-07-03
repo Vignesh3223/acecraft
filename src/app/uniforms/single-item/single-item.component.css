@@ -1,0 +1,15 @@
+.row {
+    width: 100%;
+}
+
+.p5 {
+    font-family: proxima;
+    color: #000000;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.container {
+    cursor: pointer;
+}

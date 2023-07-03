@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { environment } from 'src/environment/environment';
 import { UserService } from 'src/services/user.service';
-import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import Swal from 'sweetalert2';
 
 @Component({
@@ -13,19 +13,16 @@ import Swal from 'sweetalert2';
 })
 
 export class LoginComponent implements OnInit {
- 
 
-  userapi = environment.userapi;
+  public LoginForm!: FormGroup | any;
 
-  LoginForm!: FormGroup|any;
-  email: FormControl | any;
-  password: FormControl | any;
+  userurl = environment.userapi;
 
   submitted = false;
   get f() {
     return this.LoginForm.controls;
   }
- 
+
   constructor(
     private formbuilder: FormBuilder,
     private http: HttpClient,
@@ -33,10 +30,13 @@ export class LoginComponent implements OnInit {
     private userService: UserService
   ) { }
 
+  useremail: FormControl | any;
+  password: FormControl | any;
+
   ngOnInit() {
     this.userService.validateAuth(false);
     this.LoginForm = this.formbuilder.group({
-      email: ['',
+      useremail: ['',
         [Validators.required,
         Validators.email,
         Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')]],
@@ -44,18 +44,19 @@ export class LoginComponent implements OnInit {
     });
   }
 
-  onSubmit(form: any) {
+  onSubmit() {
     this.submitted = true;
     if (this.LoginForm.invalid) {
       return;
     }
-    this.http.get<any>(this.userapi).subscribe((res) => {
+    this.http.get<any>(this.userurl).subscribe((res) => {
       const user = res.find((a: any) => {
         return (
-          a.email === this.LoginForm.value.email &&
+          a.useremail === this.LoginForm.value.useremail &&
           a.password === this.LoginForm.value.password
         );
       });
+
       if (user) {
         const Toast = Swal.mixin({
           toast: true,
@@ -67,7 +68,6 @@ export class LoginComponent implements OnInit {
         Toast.fire({
           title: 'Login Successful',
         });
-        this.LoginForm.reset();
         this.router.navigate(['']);
         this.userService.validateAuth(true);
       }

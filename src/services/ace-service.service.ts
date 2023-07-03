@@ -13,11 +13,15 @@ export class AceServiceService {
   noteurl: string = "http://localhost:3000/notes";
   schoolurl: string = "http://localhost:3000/schools";
   hondaurl: string = "http://localhost:3000/honda";
-  uniformurl: string = "http://localhost:3000/uniform"
+  uniformurl: string = "http://localhost:3000/uniform";
 
 
   getNotes() {
     return this.http.get<Notes[]>(this.noteurl);
+  }
+
+  getNotesbyId(id:number) {
+    return this.http.get<Notes[]>(this.noteurl + '?id=' + id);
   }
 
   getSchool() {

@@ -1,1 +1,195 @@
-<p>viewnote works!</p>
+<section class="page1">
+    <div class="container" *ngFor="let view of notesdata">
+        <p class="date text-center">{{view.date}}</p>
+        <h1 class="header pb-2 text-center">{{view.heading}}</h1>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div *ngIf="view.id===1">
+                    <p class="para">{{view.p1}}</p>
+                    <p class="sub">{{view.subhead1}}</p>
+                    <ul>
+                        <li>{{view.list1}}</li>
+                        <li>{{view.list2}}</li>
+                        <li>{{view.list3}}</li>
+                        <li>{{view.list4}}</li>
+                        <li>{{view.list5}}</li>
+                        <li>{{view.list6}}</li>
+                    </ul>
+                    <p class="sub">{{view.subhead2}}</p>
+                    <ul>
+                        <li>{{view.list7}}</li>
+                        <li>{{view.list8}}</li>
+                        <li>{{view.list9}}</li>
+                        <li>{{view.list10}}</li>
+                        <li>{{view.list11}}</li>
+                    </ul>
+                    <p class="sub">{{view.conclusion}}</p>
+                    <p class="para">{{view.p2}}</p>
+                </div>
+                <div *ngIf="view.id===2 || view.id===6">
+                    <p class="para">{{view.p1}}</p>
+                    <p class="sub">{{view.subhead1}}</p>
+                    <p class="sub">{{view.subhead2}}</p>
+                    <p class="para">{{view.p2}}</p>
+                    <p class="sub">{{view.subhead3}}</p>
+                    <p class="sub">{{view.subhead4}}</p>
+                    <p class="para">{{view.p3}}</p>
+                    <p class="sub">{{view.subhead5}}</p>
+                    <p class="sub">{{view.subhead6}}</p>
+                    <p class="para">{{view.p4}}</p>
+                    <p class="sub">{{view.subhead7}}</p>
+                    <p class="sub">{{view.subhead8}}</p>
+                    <p class="para">{{view.p5}}</p>
+                    <p class="sub">{{view.subhead9}}</p>
+                    <p class="sub">{{view.subhead10}}</p>
+                    <p class="para">{{view.p6}}</p>
+                    <p class="sub">{{view.conclusion}}</p>
+                    <p class="para">{{view.p7}}</p>
+                </div>
+                <div *ngIf="view.id===9">
+                    <p class="para">{{view.p1}}</p>
+                    <p class="sub">{{view.subhead1}}</p>
+                    <p class="para">{{view.p2}}</p>
+                    <p class="para">{{view.p3}}</p>
+                    <p class="sub">{{view.subhead2}}</p>
+                    <p class="para">{{view.p4}}</p>
+                    <ul>
+                        <li>{{view.list1}}</li>
+                        <li>{{view.list2}}</li>
+                        <li>{{view.list3}}</li>
+                    </ul>
+                    <p class="sub">{{view.subhead3}}</p>
+                    <p class="para">{{view.p5}}</p>
+                    <ul>
+                        <li>{{view.list4}}</li>
+                        <li>{{view.list5}}</li>
+                        <li>{{view.list6}}</li>
+                        <li>{{view.list7}}</li>
+                    </ul>
+                    <p class="sub">{{view.subhead4}}</p>
+                    <p class="para">{{view.p6}}</p>
+                    <ul>
+                        <li>{{view.list8}}</li>
+                        <li>{{view.list9}}</li>
+                        <li>{{view.list10}}</li>
+                    </ul>
+                    <p class="sub">{{view.subhead5}}</p>
+                    <p class="para">{{view.p7}}</p>
+                    <ul>
+                        <li>{{view.list11}}</li>
+                        <li>{{view.list12}}</li>
+                        <li>{{view.list13}}</li>
+                    </ul>
+                    <p class="sub">{{view.conclusion}}</p>
+                    <p class="para">{{view.p8}}</p>
+                </div>
+                <div *ngIf="view.id===11">
+                    <p class="para">{{view.p1}}</p>
+                    <p class="para">{{view.p2}}</p>
+                    <p class="para">{{view.p3}}</p>
+                    <p class="para">{{view.p4}}</p>
+                    <p class="para">{{view.p5}}</p>
+                    <p class="para">{{view.p6}}</p>
+                    <p class="para">{{view.p7}}</p>
+                    <p class="para">{{view.p8}}</p>
+                    <p class="para">{{view.p9}}</p>
+                    <p class="para">{{view.p10}}</p>
+                    <p class="para">{{view.p11}}</p>
+                </div>
+                <div *ngIf="view.id===12">
+                    <p class="sub">{{view.subhead1}}</p>
+                    <p class="para">{{view.p1}}</p>
+                    <p class="para">{{view.p2}}</p>
+                    <p class="sub">{{view.subhead2}}</p>
+                    <p class="para">{{view.p3}}</p>
+                    <p class="sub">{{view.subhead3}}</p>
+                    <p class="para">{{view.p4}}</p>
+                    <p class="para">{{view.p5}}</p>
+                    <p class="para">{{view.p6}}</p>
+                    <p class="sub">{{view.subhead4}}</p>
+                    <p class="para">{{view.p7}}</p>
+                    <p class="para">{{view.p8}}</p>
+                    <p class="sub">{{view.subhead5}}</p>
+                    <p class="para">{{view.p9}}</p>
+                    <p class="sub">{{view.subhead6}}</p>
+                    <p class="para">{{view.p10}}</p>
+                    <p class="para">{{view.p11}}</p>
+                    <p class="sub">{{view.subhead7}}</p>
+                    <p class="para">{{view.p12}}</p>
+                    <p class="sub">{{view.subhead8}}</p>
+                    <p class="para">{{view.p13}}</p>
+                    <p class="para">{{view.p14}}</p>
+                    <p class="sub">{{view.subhead9}}</p>
+                    <p class="para">{{view.p15}}</p>
+                    <p class="sub">{{view.subhead10}}</p>
+                    <p class="para">{{view.p16}}</p>
+                </div>
+                <div *ngIf="view.id===13;else notes">
+                    <p class="para">{{view.p1}}</p>
+                    <p class="sub">{{view.subhead1}}</p>
+                    <p class="para">{{view.p2}}</p>
+                    <p class="sub">{{view.subhead2}}</p>
+                    <p class="para">{{view.p3}}</p>
+                    <p class="sub">{{view.subhead3}}</p>
+                    <p class="para">{{view.p4}}</p>
+                    <p class="para">{{view.p5}}</p>
+                    <p class="para">{{view.p6}}</p>
+                    <p class="para">{{view.p7}}</p>
+                    <p class="para">{{view.p8}}</p>
+                    <p class="sub">{{view.subhead4}}</p>
+                    <p class="para">{{view.p9}}</p>
+                    <p class="para">{{view.p10}}</p>
+                </div>
+                <ng-template #notes>
+                    <div>
+                        <p class="para">{{view.p1}}</p>
+                        <p class="sub">{{view.subhead1}}</p>
+                        <p class="para">{{view.p2}}</p>
+                        <p class="sub">{{view.subhead2}}</p>
+                        <p class="para">{{view.p3}}</p>
+                        <p class="sub">{{view.subhead3}}</p>
+                        <p class="para">{{view.p4}}</p>
+                        <p class="sub">{{view.subhead4}}</p>
+                        <p class="para">{{view.p5}}</p>
+                        <p class="sub">{{view.subhead5}}</p>
+                        <p class="para">{{view.p6}}</p>
+                        <p class="sub">{{view.conclusion}}</p>
+                        <p class="para">{{view.p7}}</p>
+                    </div>
+                </ng-template>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <hr>
+        <br />
+        <h3>0 Comment</h3>
+        <br />
+        <hr>
+        <br />
+        <h3 class="mb-5">Leave a Comment</h3>
+        <div class="row">
+            <div class="col-8">
+                <form #comment="ngForm" (ngSubmit)="comment.valid && onSubmit(comment)" novalidate>
+                    <div class="form-group mb-2">
+                        <label for="name">Name</label><br>
+                        <input class="form-control" type="text" placeholder="Name" required>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="email">Email</label><br>
+                        <input class="form-control" type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="comment">Message</label><br>
+                        <textarea class="form-control" rows="3" cols="70" placeholder="Your Comment"
+                            required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="buttton" class="mt-1" id="btn1">Post Comment</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
