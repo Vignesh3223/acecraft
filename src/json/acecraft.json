@@ -2346,16 +2346,5 @@
     }
   ],
   "users": [
-    {
-      "firstname": "Vicky",
-      "lastname": "Ramsey",
-      "useremail": "vikey@gmail.com",
-      "password": "qwerty234",
-      "confirmpassword": "qwerty234",
-      "profession": "Enterprise",
-      "dealername": "",
-      "dealercode": "",
-      "id": 1
-    }
   ]
 }
