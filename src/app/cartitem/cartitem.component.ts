@@ -52,6 +52,8 @@ export class CartitemComponent implements OnInit {
       Swal.fire({
         title: "Your product has been removed",
         icon: "warning",
+        background: '#FCEBE9',
+        color: '#751A0C'
       }).then(() => {
         this.router.navigate(['/cartitems']);
       })
@@ -73,7 +75,9 @@ export class CartitemComponent implements OnInit {
     })
 
     Toast.fire({
-      title: 'Product is removed from cart successfully'
+      title: 'Product is removed from cart successfully',
+      background: '#E6F9ED',
+      color: '#006730'
     })
     this.ngOnInit();
   }

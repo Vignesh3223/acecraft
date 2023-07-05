@@ -34,6 +34,9 @@ import { ItemsListComponent } from './uniforms/items-list/items-list.component';
 import { CartitemComponent } from './cartitem/cartitem.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { OrderComponent } from './order/order.component';
+import { ToastModule } from 'primeng/toast';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +62,8 @@ import { RegisterComponent } from './register/register.component';
     CartitemComponent,
     LoginComponent,
     RegisterComponent,
+    OrderComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
@@ -73,7 +78,8 @@ import { RegisterComponent } from './register/register.component';
     ButtonModule,
     CardModule,
     TimelineModule,
-    CarouselModule
+    CarouselModule,
+    ToastModule
   ],
   providers: [],
   bootstrap: [AppComponent]

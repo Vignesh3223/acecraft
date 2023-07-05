@@ -2346,5 +2346,33 @@
     }
   ],
   "users": [
+    {
+      "firstname": "Vignesh",
+      "lastname": "Ramasamy",
+      "useremail": "viketvicky@gmail.com",
+      "password": "Qwerty123",
+      "confirmpassword": "Qwerty123",
+      "profession": "School",
+      "dealername": "PeterEngland",
+      "dealercode": "1478523694",
+      "city": "Coimbatore",
+      "state": "Lakshadweep",
+      "gstnumber": "5824710369",
+      "id": 1
+    },
+    {
+      "firstname": "Vinod",
+      "lastname": "V",
+      "useremail": "vinod@gmail.com",
+      "password": "wagon123",
+      "confirmpassword": "wagon123",
+      "profession": "Enterprise",
+      "dealername": "Peter England",
+      "dealercode": "125894",
+      "city": "Coimbatore",
+      "state": "Tamil Nadu",
+      "gstnumber": "888662",
+      "id": 2
+    }
   ]
 }

@@ -5,6 +5,9 @@ import { Subject } from 'rxjs';
   providedIn: 'root'
 })
 export class UserService {
+  add(arg0: { severity: string; summary: string; detail: string; }) {
+    throw new Error('Method not implemented.');
+  }
 
   public authSubject = new Subject<boolean>();
 

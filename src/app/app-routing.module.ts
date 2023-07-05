@@ -14,6 +14,9 @@ import { ViewItemComponent } from './uniforms/view-item/view-item.component';
 import { CartitemComponent } from './cartitem/cartitem.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { OrderComponent } from './order/order.component';
+import { ContactComponent } from './contact/contact.component';
+import { AuthGuard } from 'src/shared/auth.guard';
 
 const routes: Routes = [
   {
@@ -50,13 +53,19 @@ const routes: Routes = [
     path: 'viewItem/:id', component: ViewItemComponent
   },
   {
-    path: 'cartitems', component: CartitemComponent
+    path: 'cartitems', component: CartitemComponent, canActivate: [AuthGuard]
   },
   {
     path: 'login', component: LoginComponent
   },
   {
     path: 'register', component: RegisterComponent
+  },
+  {
+    path: 'order', component: OrderComponent
+  },
+  {
+    path: 'contact', component: ContactComponent
   }
 ];
 

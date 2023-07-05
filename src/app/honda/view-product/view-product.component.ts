@@ -58,7 +58,9 @@ export class ViewProductComponent implements OnInit {
     })
 
     Toast.fire({
-      title: 'Product added successfully'
+      title: 'Product added successfully',
+      background: '#E6F9ED',
+      color: '#006730'
     })
     this.cartserv.getCount();
   }

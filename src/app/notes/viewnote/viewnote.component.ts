@@ -43,11 +43,13 @@ export class ViewnoteComponent implements OnInit{
         toast: true,
         position: 'top',
         showConfirmButton: false,
-        timer: 3000,
+        timer: 1000,
         timerProgressBar: true,
       });
       Toast.fire({
         title: 'Thanks for your comment',
+        background: '#E6F9ED',
+        color: '#006730'
       });
       form.reset();
     }

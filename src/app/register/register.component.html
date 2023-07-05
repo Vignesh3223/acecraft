@@ -4,7 +4,7 @@
             <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" novalidate>
                 <h2 class="title text-center mb-3">Signup with ACECRAFT</h2>
                 <div class="form-group mb-3">
-                    <input type="text" class="form-control" formControlName="firstname" placeholder="First Name">
+                    <input type="text" class="form-control" name="firstname" formControlName="firstname" placeholder="First Name"/>
                     <div class="error ng-binding text-danger">
                         <label *ngIf="submitted && f['firstname'].errors?.['required']">Required Field</label>
                         <label *ngIf="submitted && f['firstname'].errors?.['pattern']">Firstname must contain only
@@ -12,7 +12,7 @@
                     </div>
                 </div>
                 <div class="form-group mb-3">
-                    <input type="text" class="form-control" formControlName="lastname" placeholder="Last Name">
+                    <input type="text" class="form-control" name="lastname" formControlName="lastname" placeholder="Last Name"/>
                     <div class="error ng-binding text-danger">
                         <label *ngIf="submitted && f['lastname'].errors?.['required']">Required Field</label>
                         <label *ngIf="submitted && f['lastname'].errors?.['pattern']">Lastname must contain only
@@ -20,7 +20,7 @@
                     </div>
                 </div>
                 <div class="form-group mb-3">
-                    <input type="email" class="form-control" formControlName="useremail" placeholder="Email">
+                    <input type="email" class="form-control" name="email" formControlName="useremail" placeholder="Email"/>
                     <div class="error ng-binding text-danger">
                         <label *ngIf="submitted && f['useremail'].errors?.['required']">Required Field</label>
                         <label *ngIf="submitted && f['useremail'].errors?.['email']">Email must be a valid email
@@ -30,7 +30,7 @@
                     </div>
                 </div>
                 <div class="form-group mb-3">
-                    <input type="password" class="form-control" formControlName="password" placeholder="Password">
+                    <input type="password" class="form-control" name="password" formControlName="password" placeholder="Password"/>
                     <div class="error ng-binding text-danger">
                         <label *ngIf="submitted && f['password'].errors?.['required']">Required Field</label>
                         <label *ngIf="submitted && f['password'].errors?.['minlength']">Password must be 6 characters
@@ -42,23 +42,23 @@
                     </div>
                 </div>
                 <div class="form-group mb-3">
-                    <input type="password" class="form-control" formControlName="confirmpassword"
-                        placeholder="Confirm Password">
+                    <input type="password" class="form-control" name="confirmpassword" formControlName="confirmpassword"
+                        placeholder="Confirm Password"/>
                     <div class="error ng-binding text-danger">
                         <label *ngIf="submitted && f['confirmpassword'].errors?.['required']">Required Field</label>
                     </div>
                 </div>
                 <div class="form-group ms-3 mb-3">
-                    <label><input type="radio" class="ms-5 me-1" formControlName="profession" id="scl"
-                            value="School">School</label>
-                    <label><input type="radio" class="ms-5 me-1" formControlName="profession" id="ent"
-                            value="Enterprise">Enterprise</label>
+                    <label><input type="radio" class="ms-5 me-1" name="profession" formControlName="profession" id="scl"
+                            value="School"/>School</label>
+                    <label><input type="radio" class="ms-5 me-1" name="profession" formControlName="profession" id="ent"
+                            value="Enterprise"/>Enterprise</label>
                     <div class="error ng-binding text-danger">
                         <label *ngIf="submitted && f['profession'].errors?.['required']">Required Field</label>
                     </div>
                 </div>
                 <div class="form-group mb-3">
-                    <input type="text" class="form-control" formControlName="dealername" placeholder="Dealership Name">
+                    <input type="text" class="form-control" name="dealername" formControlName="dealername" placeholder="Dealership Name"/>
                     <div class="error ng-binding text-danger">
                         <label *ngIf="submitted && f['dealername'].errors?.['required']">Required Field</label>
                         <label *ngIf="submitted && f['dealername'].errors?.['pattern']">Dealership name must contain
@@ -67,8 +67,8 @@
 
                 </div>
                 <div class="form-group mb-3">
-                    <input type="text" class="form-control" formControlName="dealercode"
-                        placeholder="Dealership Number / Code">
+                    <input type="text" class="form-control" name="dealercode" formControlName="dealercode"
+                        placeholder="Dealership Number / Code"/>
                     <div class="error ng-binding text-danger">
                         <label *ngIf="submitted && f['dealercode'].errors?.['required']">Required Field</label>
                         <label *ngIf="submitted && f['password'].errors?.['minlength']">Dealership code must contain 6
@@ -78,11 +78,11 @@
                     </div>
                 </div>
                 <div class="form-group mb-3">
-                    <input type="text" class="form-control" formControlName="city" placeholder="City">
+                    <input type="text" class="form-control" name="city" formControlName="city" placeholder="City"/>
                 </div>
                 <div class="form-group mb-3">
-                    <label for="state">State</label><br />
-                    <select class="form-control" formControlName="state">
+                    <label for="state">State</label><br/>
+                    <select class="form-control" name="state" formControlName="state">
                         <option value="state" disabled> </option>
                         <option value="Andhra Pradesh">Andhra Pradesh</option>
                         <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
@@ -123,7 +123,7 @@
                     </select>
                 </div>
                 <div class="form-group mb-3">
-                    <input type="text" class="form-control" formControlName="gstnumber" placeholder="GST Number" />
+                    <input type="text" class="form-control" name="gstnumber" formControlName="gstnumber" placeholder="GST Number"/>
                 </div>
                 <div class="form-group mb-3">
                     <button type="buttton" class="mt-1" id="btn1"> Register </button>

@@ -13,3 +13,20 @@
 .container {
     cursor: pointer;
 }
+
+.container:hover .view{
+    display: block;
+ 
+}
+
+#btn1 {
+    display: none;
+    border: none;
+    border-radius: 0%;
+    z-index: 2;
+    background-color: #000;
+    color: white;
+    font: 15px proxima;
+    padding: 10px;
+    top:50px;
+}

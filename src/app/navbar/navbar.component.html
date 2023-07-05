@@ -33,21 +33,43 @@
                         </ul>
                         <div class="setting">
                             <i class="pi pi-cog p-3" style="font-size: 2rem;color: white;"></i>
-                            <ul class="setitems">
-                                <a routerLink='/login'>
-                                    <li>Sign in | <i class="fa-solid fa-right-to-bracket" style="color: #978F8F;"></i>
-                                    </li>
-                                </a>
-                                <a routerLink='/register'>
-                                    <li>Register | <i class="fa-solid fa-user-plus" style="color: #978F8F;"></i></li>
-                                </a>
-                                <a routerLink=''>
-                                    <li>Order Status | <i class="fa-solid fa-box" style="color: #978F8F;"></i></li>
-                                </a>
-                                <a routerLink=''>
-                                    <li>Contact | <i class="fa-solid fa-comments" style="color: #978F8F;"></i></li>
-                                </a>
-                            </ul>
+                            <ng-template #log>
+                                <ul class="setitems">
+                                    <a routerLink='/login'>
+                                        <li>Sign in | <i class="fa-solid fa-right-to-bracket"
+                                                style="color: #978F8F;"></i>
+                                        </li>
+                                    </a>
+                                    <a routerLink='/register'>
+                                        <li>Register | <i class="fa-solid fa-user-plus" style="color: #978F8F;"></i>
+                                        </li>
+                                    </a>
+                                    <a routerLink='/order'>
+                                        <li>Order Status | <i class="fa-solid fa-box" style="color: #978F8F;"></i></li>
+                                    </a>
+                                    <a routerLink='/contact'>
+                                        <li>Contact | <i class="fa-solid fa-comments" style="color: #978F8F;"></i></li>
+                                    </a>
+                                </ul>
+                            </ng-template>
+                            <div *ngIf="auth;else log">
+                                <ul class="setitems">
+                                    <a routerLink='/order'>
+                                        <li>Order Status | <i class="fa-solid fa-box" style="color: #978F8F;"></i></li>
+                                    </a>
+                                    <a routerLink='/contact'>
+                                        <li>Contact | <i class="fa-solid fa-comments" style="color: #978F8F;"></i></li>
+                                    </a>
+                                    <a routerLink=''>
+                                        <li>Account | <i class="fa-solid fa-user" style="color: #978F8F;"></i>
+                                        </li>
+                                    </a>
+                                    <a routerLink='/login'>
+                                        <li>Logout | <i class="fa-solid fa-right-to-bracket"
+                                                style="color: #978F8F;"></i></li>
+                                    </a>
+                                </ul>
+                            </div>
                         </div>
                         <a routerLink="/cartitems">
                             <i class="pi pi-shopping-cart mr-4 custom-badge" pBadge

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CartserviceService } from 'src/services/cartservice.service';
+import { UserService } from 'src/services/user.service';
 
 @Component({
   selector: 'app-navbar',
@@ -10,9 +11,17 @@ export class NavbarComponent implements OnInit {
 
   cartcount: number = 0;
 
-  constructor(private cartserv: CartserviceService) { }
+  auth: boolean = false;
+
+  constructor(private cartserv: CartserviceService, private authService: UserService) { }
 
   ngOnInit() {
+    this.authService.authSubject.subscribe(
+      data => {
+      this.auth = data;
+    }
+   );
+
     this.cartserv.getCartItems().subscribe((res) => {
       this.cartcount = res.length;
     });

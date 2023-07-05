@@ -67,6 +67,8 @@ export class LoginComponent implements OnInit {
         });
         Toast.fire({
           title: 'Login Successful',
+          background: '#E6F9ED',
+          color: '#006730'
         });
         this.router.navigate(['']);
         this.userService.validateAuth(true);
@@ -81,6 +83,8 @@ export class LoginComponent implements OnInit {
         });
         Toast.fire({
           title: 'User not found',
+          background: '#FCEBE9',
+          color: '#751A0C'
         });
         this.userService.validateAuth(false);
       }
