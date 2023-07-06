@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-2"></div>
             <div class="col-8">
-                <div *ngIf="view.id===1">
+                <div *ngIf="view.id==1">
                     <p class="para">{{view.p1}}</p>
                     <p class="sub">{{view.subhead1}}</p>
                     <ul>
@@ -27,7 +27,7 @@
                     <p class="sub">{{view.conclusion}}</p>
                     <p class="para">{{view.p2}}</p>
                 </div>
-                <div *ngIf="view.id===2 || view.id===6">
+                <div *ngIf="view.id==2 || view.id==6">
                     <p class="para">{{view.p1}}</p>
                     <p class="sub">{{view.subhead1}}</p>
                     <p class="sub">{{view.subhead2}}</p>
@@ -84,7 +84,7 @@
                     <p class="sub">{{view.conclusion}}</p>
                     <p class="para">{{view.p8}}</p>
                 </div>
-                <div *ngIf="view.id===11">
+                <div *ngIf="view.id==11">
                     <p class="para">{{view.p1}}</p>
                     <p class="para">{{view.p2}}</p>
                     <p class="para">{{view.p3}}</p>
@@ -97,7 +97,7 @@
                     <p class="para">{{view.p10}}</p>
                     <p class="para">{{view.p11}}</p>
                 </div>
-                <div *ngIf="view.id===12">
+                <div *ngIf="view.id==12">
                     <p class="sub">{{view.subhead1}}</p>
                     <p class="para">{{view.p1}}</p>
                     <p class="para">{{view.p2}}</p>
@@ -125,7 +125,7 @@
                     <p class="sub">{{view.subhead10}}</p>
                     <p class="para">{{view.p16}}</p>
                 </div>
-                <div *ngIf="view.id===13;else notes">
+                <div *ngIf="view.id==13;else notes">
                     <p class="para">{{view.p1}}</p>
                     <p class="sub">{{view.subhead1}}</p>
                     <p class="para">{{view.p2}}</p>

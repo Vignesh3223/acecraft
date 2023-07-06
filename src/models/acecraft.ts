@@ -8,6 +8,15 @@ export interface Notes {
     p5: string;
     p6: string;
     p7: string;
+    p8: string;
+    p9: string;
+    p10: string;
+    p11: string;
+    p12: string;
+    p13: string;
+    p14: string;
+    p15: string;
+    p16: string;
     header: string;
     conclusion: string;
     subhead1: string;
@@ -31,6 +40,8 @@ export interface Notes {
     list9: string;
     list10: string;
     list11: string;
+    list12: string;
+    list13: string;
 }
 
 export interface Schools {

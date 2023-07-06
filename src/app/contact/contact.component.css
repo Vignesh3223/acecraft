@@ -36,3 +36,70 @@
     font: 20px proxima;
     font-weight: bold;
 }
+
+#box:hover {
+    color: black;
+}
+
+.page2 {
+    background-color: #FFFFFF;
+    padding: 30px 0 30px 0;
+}
+
+.card {
+    background-color: #000;
+    border-radius: 0%;
+    width: 400px;
+    height: 246px;
+}
+
+.card1 {
+    margin-left: 40px;
+}
+
+.card2 {
+    margin-left: 150px;
+}
+
+.card-body {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#c1 {
+    font: 26px proxima-thin;
+    color: #978F8F;
+}
+
+#c2,
+#c3,
+#c4 {
+    font: 26px proxima;
+    font-weight: bold;
+    color: #978F8F;
+}
+
+#c3 span,
+#c4 span {
+    font: 26px proxima-thin;
+    color: #978F8F;
+}
+
+#e1,
+#e3,
+#e4 {
+    font: 26px proxima-thin;
+    color: #978F8F;
+}
+
+#e2 {
+    font: 26px proxima;
+    font-weight: bold;
+    color: #978F8F;
+}
+
+#icon {
+    width: 35px;
+    height: 35px;
+}
