@@ -20,7 +20,7 @@ export class AceServiceService {
     return this.http.get<Notes[]>(this.noteurl);
   }
 
-  getNotesbyId(id:number) {
+  getNotesbyId(id: number) {
     return this.http.get<Notes[]>(this.noteurl + '?id=' + id);
   }
 
@@ -43,4 +43,5 @@ export class AceServiceService {
   getUniformbyId(id: number) {
     return this.http.get<Uniforms[]>(this.uniformurl + '?id=' + id);
   }
+
 }
