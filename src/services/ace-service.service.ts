@@ -10,10 +10,10 @@ export class AceServiceService {
 
   constructor(private http: HttpClient) { }
 
-  noteurl: string = "http://localhost:3000/notes";
-  schoolurl: string = "http://localhost:3000/schools";
-  hondaurl: string = "http://localhost:3000/honda";
-  uniformurl: string = "http://localhost:3000/uniform";
+  noteurl: string = "https://ace-6rru.onrender.com/notes";
+  schoolurl: string = "https://ace-6rru.onrender.com/schools";
+  hondaurl: string = "https://ace-6rru.onrender.com/honda";
+  uniformurl: string = "https://ace-6rru.onrender.com/uniform";
 
 
   getNotes() {
