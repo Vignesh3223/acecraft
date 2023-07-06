@@ -6,67 +6,67 @@
         </div>
     </div>
     <ng-template #cartitems>
-    <div class="container text-center">
-        <h1 class="total">Your bag total is {{ totalPrice(cart) | currency : "INR" : "symbol" : "3.0" }}</h1>
-        <hr>
-    </div>
-    <div class="container" *ngFor="let item of cart">
-        <div class="row">
-            <div class="col-3">
-                <img class="img-fluid" src="{{item.image}}" alt="product">
+        <div class="container text-center">
+            <h1 class="total">Your bag total is {{ totalPrice(cart) | currency : "INR" : "symbol" : "3.0" }}</h1>
+            <hr>
+        </div>
+        <div class="container" *ngFor="let item of cart">
+            <div class="row">
+                <div class="col-3">
+                    <img class="img-fluid" src="{{item.image}}" alt="product">
+                </div>
+                <div class="col-5">
+                    <h3 class="name">{{item.text}}</h3>
+                    <div *ngIf="item.size">
+                        <p class="size">Size: {{item.size}}</p>
+                    </div>
+                    <div *ngIf="item.size1">
+                        <p class="size1">Size: {{item.size1}}</p>
+                    </div>
+                    <div *ngIf="item.gender">
+                        <p class="gender">Gender: {{item.gender}}</p>
+                    </div>
+                    <div *ngIf="item.department">
+                        <p class="department">Department: {{item.department}}</p>
+                    </div>
+                </div>
+                <div class="col-2 text-center d-flex">
+                    <span class="decrement" (click)="decrease(item)"><i class="fa-solid fa-minus me-2"
+                            style="color: #000000;"></i></span>
+                    <h3 class="quantity">{{item.quantity}}</h3><span class="increment" (click)="increase(item)"><i
+                            class="fa-solid fa-plus ms-2" style="color: #000000;"></i></span>
+                </div>
+                <div class="col-2 text-center">
+                    <h3 class="price">{{item.price*item.quantity | currency : "INR" : "symbol" : "3.0"}}</h3>
+                    <span (click)="delete(item)" id="remove">Remove</span>
+                </div>
             </div>
-            <div class="col-5">
-                <h3 class="name">{{item.text}}</h3>
-                <div *ngIf="item.size">
-                    <p class="size">Size: {{item.size}}</p>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-6">
+                    <div class="form-group">
+                        <p class="code">Enter Coupon Code here:</p>
+                        <input id="inp" type="text"><button type="button" id="btn2">Apply!</button>
+                    </div>
                 </div>
-                <div *ngIf="item.size1">
-                    <p class="size1">Size: {{item.size1}}</p>
+                <div class="col-2">
+                    <span id="sub">Sub Total</span>
+                    <br /><br />
+                    <span id="tot">Total</span>
                 </div>
-                <div *ngIf="item.gender">
-                    <p class="gender">Gender: {{item.gender}}</p>
+                <div class="col-4 text-end">
+                    <span id="sub">{{ totalPrice(cart) | currency : "INR" : "symbol" : "3.0" }}</span>
+                    <br /><br />
+                    <span id="tot">{{ totalPrice(cart) | currency : "INR" : "symbol" : "3.0" }}</span>
+                    <br /><br />
+                    <div class="form d-flex text-end">
+                        <button id="btn3" class="me-3" routerLink=''>Continue Shopping</button>
+                        <button id="btn4" (click)="makePayment(totalPrice(cart))">Place Order</button>
+                    </div>
                 </div>
-                <div *ngIf="item.department">
-                    <p class="department">Department: {{item.department}}</p>
-                </div>
-            </div>
-            <div class="col-2 text-center d-flex">
-                <span class="decrement" (click)="decrease(item)"><i class="fa-solid fa-minus me-2"
-                        style="color: #000000;"></i></span>
-                <h3 class="quantity">{{item.quantity}}</h3><span class="increment" (click)="increase(item)"><i
-                        class="fa-solid fa-plus ms-2" style="color: #000000;"></i></span>
-            </div>
-            <div class="col-2 text-center">
-                <h3 class="price">{{item.price*item.quantity | currency : "INR" : "symbol" : "3.0"}}</h3>
-                <span (click)="delete(item)" id="remove">Remove</span>
             </div>
         </div>
-        <hr>
-    </div>
-    <div class="container">
-        <div class="row mt-5">
-            <div class="col-6">
-                <div class="form-group">
-                    <p class="code">Enter Coupon Code here:</p>
-                    <input id="inp" type="text"><button type="button" id="btn2">Apply!</button>
-                </div>
-            </div>
-            <div class="col-2">
-                <span id="sub">Sub Total</span>
-                <br /><br />
-                <span id="tot">Total</span>
-            </div>
-            <div class="col-4 text-end">
-                <span id="sub">{{ totalPrice(cart) | currency : "INR" : "symbol" : "3.0" }}</span>
-                <br /><br />
-                <span id="tot">{{ totalPrice(cart) | currency : "INR" : "symbol" : "3.0" }}</span>
-                <br /><br />
-                <div class="form d-flex text-end">
-                    <button id="btn3" class="me-3" routerLink=''>Continue Shopping</button>
-                    <button id="btn4">Place Order</button>
-                </div>
-            </div>
-        </div>
-    </div>
     </ng-template>
 </section>
