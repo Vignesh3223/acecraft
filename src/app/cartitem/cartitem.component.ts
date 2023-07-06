@@ -4,12 +4,12 @@ import { Cart } from 'src/models/acecraft';
 import { Router } from '@angular/router';
 import Swal from 'sweetalert2';
 
-
 @Component({
   selector: 'app-cartitem',
   templateUrl: './cartitem.component.html',
   styleUrls: ['./cartitem.component.css']
 })
+
 export class CartitemComponent implements OnInit {
 
   paymentHandler: any = null;
