@@ -27,14 +27,12 @@ export class CartitemComponent implements OnInit {
           timer: 3000,
           timerProgressBar: true,
         });
-
         Toast.fire({
           icon: 'success',
           title: 'Order Placed Successfully',
           background: '#E6F9ED',
           color: '#006730'
         });
-        this.cartserv.removeItemFromCart();
       }
     });
     paymentHandler.open({
@@ -96,7 +94,6 @@ export class CartitemComponent implements OnInit {
   totalprice: number = 0;
   quantity = 1;
 
-
   totalPrice(data: any) {
     debugger
     const initialValue = 0;
@@ -106,10 +103,12 @@ export class CartitemComponent implements OnInit {
   }
 
   cart: Cart[] = [];
+
   increase(item: Cart) {
     item.quantity++;
     this.cartserv.updateCart(item)
   }
+
   decrease(item: Cart) {
     if (item.quantity <= 1) {
       this.delete(item)
@@ -137,7 +136,6 @@ export class CartitemComponent implements OnInit {
       timer: 3000,
       timerProgressBar: true,
     })
-
     Toast.fire({
       title: 'Product is removed from cart successfully',
       background: '#E6F9ED',
