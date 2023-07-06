@@ -1,148 +1,158 @@
 <section class="page1">
-    <div class="container" *ngFor="let view of notesdata">
-        <p class="date text-center">{{view.date}}</p>
-        <h1 class="header pb-2 text-center">{{view.heading}}</h1>
-        <div class="row">
-            <div class="col-2"></div>
-            <div class="col-8">
-                <div *ngIf="view.id==1">
-                    <p class="para">{{view.p1}}</p>
-                    <p class="sub">{{view.subhead1}}</p>
-                    <ul>
-                        <li>{{view.list1}}</li>
-                        <li>{{view.list2}}</li>
-                        <li>{{view.list3}}</li>
-                        <li>{{view.list4}}</li>
-                        <li>{{view.list5}}</li>
-                        <li>{{view.list6}}</li>
-                    </ul>
-                    <p class="sub">{{view.subhead2}}</p>
-                    <ul>
-                        <li>{{view.list7}}</li>
-                        <li>{{view.list8}}</li>
-                        <li>{{view.list9}}</li>
-                        <li>{{view.list10}}</li>
-                        <li>{{view.list11}}</li>
-                    </ul>
-                    <p class="sub">{{view.conclusion}}</p>
-                    <p class="para">{{view.p2}}</p>
-                </div>
-                <div *ngIf="view.id==2 || view.id==6">
-                    <p class="para">{{view.p1}}</p>
-                    <p class="sub">{{view.subhead1}}</p>
-                    <p class="sub">{{view.subhead2}}</p>
-                    <p class="para">{{view.p2}}</p>
-                    <p class="sub">{{view.subhead3}}</p>
-                    <p class="sub">{{view.subhead4}}</p>
-                    <p class="para">{{view.p3}}</p>
-                    <p class="sub">{{view.subhead5}}</p>
-                    <p class="sub">{{view.subhead6}}</p>
-                    <p class="para">{{view.p4}}</p>
-                    <p class="sub">{{view.subhead7}}</p>
-                    <p class="sub">{{view.subhead8}}</p>
-                    <p class="para">{{view.p5}}</p>
-                    <p class="sub">{{view.subhead9}}</p>
-                    <p class="sub">{{view.subhead10}}</p>
-                    <p class="para">{{view.p6}}</p>
-                    <p class="sub">{{view.conclusion}}</p>
-                    <p class="para">{{view.p7}}</p>
-                </div>
-                <div *ngIf="view.id===9">
-                    <p class="para">{{view.p1}}</p>
-                    <p class="sub">{{view.subhead1}}</p>
-                    <p class="para">{{view.p2}}</p>
-                    <p class="para">{{view.p3}}</p>
-                    <p class="sub">{{view.subhead2}}</p>
-                    <p class="para">{{view.p4}}</p>
-                    <ul>
-                        <li>{{view.list1}}</li>
-                        <li>{{view.list2}}</li>
-                        <li>{{view.list3}}</li>
-                    </ul>
-                    <p class="sub">{{view.subhead3}}</p>
-                    <p class="para">{{view.p5}}</p>
-                    <ul>
-                        <li>{{view.list4}}</li>
-                        <li>{{view.list5}}</li>
-                        <li>{{view.list6}}</li>
-                        <li>{{view.list7}}</li>
-                    </ul>
-                    <p class="sub">{{view.subhead4}}</p>
-                    <p class="para">{{view.p6}}</p>
-                    <ul>
-                        <li>{{view.list8}}</li>
-                        <li>{{view.list9}}</li>
-                        <li>{{view.list10}}</li>
-                    </ul>
-                    <p class="sub">{{view.subhead5}}</p>
-                    <p class="para">{{view.p7}}</p>
-                    <ul>
-                        <li>{{view.list11}}</li>
-                        <li>{{view.list12}}</li>
-                        <li>{{view.list13}}</li>
-                    </ul>
-                    <p class="sub">{{view.conclusion}}</p>
-                    <p class="para">{{view.p8}}</p>
-                </div>
-                <div *ngIf="view.id==11">
-                    <p class="para">{{view.p1}}</p>
-                    <p class="para">{{view.p2}}</p>
-                    <p class="para">{{view.p3}}</p>
-                    <p class="para">{{view.p4}}</p>
-                    <p class="para">{{view.p5}}</p>
-                    <p class="para">{{view.p6}}</p>
-                    <p class="para">{{view.p7}}</p>
-                    <p class="para">{{view.p8}}</p>
-                    <p class="para">{{view.p9}}</p>
-                    <p class="para">{{view.p10}}</p>
-                    <p class="para">{{view.p11}}</p>
-                </div>
-                <div *ngIf="view.id==12">
-                    <p class="sub">{{view.subhead1}}</p>
-                    <p class="para">{{view.p1}}</p>
-                    <p class="para">{{view.p2}}</p>
-                    <p class="sub">{{view.subhead2}}</p>
-                    <p class="para">{{view.p3}}</p>
-                    <p class="sub">{{view.subhead3}}</p>
-                    <p class="para">{{view.p4}}</p>
-                    <p class="para">{{view.p5}}</p>
-                    <p class="para">{{view.p6}}</p>
-                    <p class="sub">{{view.subhead4}}</p>
-                    <p class="para">{{view.p7}}</p>
-                    <p class="para">{{view.p8}}</p>
-                    <p class="sub">{{view.subhead5}}</p>
-                    <p class="para">{{view.p9}}</p>
-                    <p class="sub">{{view.subhead6}}</p>
-                    <p class="para">{{view.p10}}</p>
-                    <p class="para">{{view.p11}}</p>
-                    <p class="sub">{{view.subhead7}}</p>
-                    <p class="para">{{view.p12}}</p>
-                    <p class="sub">{{view.subhead8}}</p>
-                    <p class="para">{{view.p13}}</p>
-                    <p class="para">{{view.p14}}</p>
-                    <p class="sub">{{view.subhead9}}</p>
-                    <p class="para">{{view.p15}}</p>
-                    <p class="sub">{{view.subhead10}}</p>
-                    <p class="para">{{view.p16}}</p>
-                </div>
-                <div *ngIf="view.id==13;else notes">
-                    <p class="para">{{view.p1}}</p>
-                    <p class="sub">{{view.subhead1}}</p>
-                    <p class="para">{{view.p2}}</p>
-                    <p class="sub">{{view.subhead2}}</p>
-                    <p class="para">{{view.p3}}</p>
-                    <p class="sub">{{view.subhead3}}</p>
-                    <p class="para">{{view.p4}}</p>
-                    <p class="para">{{view.p5}}</p>
-                    <p class="para">{{view.p6}}</p>
-                    <p class="para">{{view.p7}}</p>
-                    <p class="para">{{view.p8}}</p>
-                    <p class="sub">{{view.subhead4}}</p>
-                    <p class="para">{{view.p9}}</p>
-                    <p class="para">{{view.p10}}</p>
-                </div>
-                <ng-template #notes>
-                    <div>
+    <div class="container">
+        <ng-container *ngFor="let view of notesdata">
+            <p class="date text-center">{{view.date}}</p>
+            <h1 class="header pb-2 text-center">{{view.heading}}</h1>
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <div *ngIf="view.id===1;else elseif1">
+                        <p class="para">{{view.p1}}</p>
+                        <p class="sub">{{view.subhead1}}</p>
+                        <ul>
+                            <li>{{view.list1}}</li>
+                            <li>{{view.list2}}</li>
+                            <li>{{view.list3}}</li>
+                            <li>{{view.list4}}</li>
+                            <li>{{view.list5}}</li>
+                            <li>{{view.list6}}</li>
+                        </ul>
+                        <p class="sub">{{view.subhead2}}</p>
+                        <ul>
+                            <li>{{view.list7}}</li>
+                            <li>{{view.list8}}</li>
+                            <li>{{view.list9}}</li>
+                            <li>{{view.list10}}</li>
+                            <li>{{view.list11}}</li>
+                        </ul>
+                        <p class="sub">{{view.conclusion}}</p>
+                        <p class="para">{{view.p2}}</p>
+                    </div>
+                    <ng-template #elseif1>
+                        <div *ngIf="view.id===2 || view.id===6;else elseif2">
+                            <p class="para">{{view.p1}}</p>
+                            <p class="sub">{{view.subhead1}}</p>
+                            <p class="sub">{{view.subhead2}}</p>
+                            <p class="para">{{view.p2}}</p>
+                            <p class="sub">{{view.subhead3}}</p>
+                            <p class="sub">{{view.subhead4}}</p>
+                            <p class="para">{{view.p3}}</p>
+                            <p class="sub">{{view.subhead5}}</p>
+                            <p class="sub">{{view.subhead6}}</p>
+                            <p class="para">{{view.p4}}</p>
+                            <p class="sub">{{view.subhead7}}</p>
+                            <p class="sub">{{view.subhead8}}</p>
+                            <p class="para">{{view.p5}}</p>
+                            <p class="sub">{{view.subhead9}}</p>
+                            <p class="sub">{{view.subhead10}}</p>
+                            <p class="para">{{view.p6}}</p>
+                            <p class="sub">{{view.conclusion}}</p>
+                            <p class="para">{{view.p7}}</p>
+                        </div>
+                    </ng-template>
+                    <ng-template #elseif2>
+                        <div *ngIf="view.id===9;else elseif3">
+                            <p class="para">{{view.p1}}</p>
+                            <p class="sub">{{view.subhead1}}</p>
+                            <p class="para">{{view.p2}}</p>
+                            <p class="para">{{view.p3}}</p>
+                            <p class="sub">{{view.subhead2}}</p>
+                            <p class="para">{{view.p4}}</p>
+                            <ul>
+                                <li>{{view.list1}}</li>
+                                <li>{{view.list2}}</li>
+                                <li>{{view.list3}}</li>
+                            </ul>
+                            <p class="sub">{{view.subhead3}}</p>
+                            <p class="para">{{view.p5}}</p>
+                            <ul>
+                                <li>{{view.list4}}</li>
+                                <li>{{view.list5}}</li>
+                                <li>{{view.list6}}</li>
+                                <li>{{view.list7}}</li>
+                            </ul>
+                            <p class="sub">{{view.subhead4}}</p>
+                            <p class="para">{{view.p6}}</p>
+                            <ul>
+                                <li>{{view.list8}}</li>
+                                <li>{{view.list9}}</li>
+                                <li>{{view.list10}}</li>
+                            </ul>
+                            <p class="sub">{{view.subhead5}}</p>
+                            <p class="para">{{view.p7}}</p>
+                            <ul>
+                                <li>{{view.list11}}</li>
+                                <li>{{view.list12}}</li>
+                                <li>{{view.list13}}</li>
+                            </ul>
+                            <p class="sub">{{view.conclusion}}</p>
+                            <p class="para">{{view.p8}}</p>
+                        </div>
+                    </ng-template>
+                    <ng-template #elseif3>
+                        <div *ngIf="view.id===11;else elseif4">
+                            <p class="para">{{view.p1}}</p>
+                            <p class="para">{{view.p2}}</p>
+                            <p class="para">{{view.p3}}</p>
+                            <p class="para">{{view.p4}}</p>
+                            <p class="para">{{view.p5}}</p>
+                            <p class="para">{{view.p6}}</p>
+                            <p class="para">{{view.p7}}</p>
+                            <p class="para">{{view.p8}}</p>
+                            <p class="para">{{view.p9}}</p>
+                            <p class="para">{{view.p10}}</p>
+                            <p class="para">{{view.p11}}</p>
+                        </div>
+                    </ng-template>
+                    <ng-template #elseif4>
+                        <div *ngIf="view.id===12;else elseif5">
+                            <p class="sub">{{view.subhead1}}</p>
+                            <p class="para">{{view.p1}}</p>
+                            <p class="para">{{view.p2}}</p>
+                            <p class="sub">{{view.subhead2}}</p>
+                            <p class="para">{{view.p3}}</p>
+                            <p class="sub">{{view.subhead3}}</p>
+                            <p class="para">{{view.p4}}</p>
+                            <p class="para">{{view.p5}}</p>
+                            <p class="para">{{view.p6}}</p>
+                            <p class="sub">{{view.subhead4}}</p>
+                            <p class="para">{{view.p7}}</p>
+                            <p class="para">{{view.p8}}</p>
+                            <p class="sub">{{view.subhead5}}</p>
+                            <p class="para">{{view.p9}}</p>
+                            <p class="sub">{{view.subhead6}}</p>
+                            <p class="para">{{view.p10}}</p>
+                            <p class="para">{{view.p11}}</p>
+                            <p class="sub">{{view.subhead7}}</p>
+                            <p class="para">{{view.p12}}</p>
+                            <p class="sub">{{view.subhead8}}</p>
+                            <p class="para">{{view.p13}}</p>
+                            <p class="para">{{view.p14}}</p>
+                            <p class="sub">{{view.subhead9}}</p>
+                            <p class="para">{{view.p15}}</p>
+                            <p class="sub">{{view.subhead10}}</p>
+                            <p class="para">{{view.p16}}</p>
+                        </div>
+                    </ng-template>
+                    <ng-template #elseif5>
+                        <div *ngIf="view.id===13;else notes">
+                            <p class="para">{{view.p1}}</p>
+                            <p class="sub">{{view.subhead1}}</p>
+                            <p class="para">{{view.p2}}</p>
+                            <p class="sub">{{view.subhead2}}</p>
+                            <p class="para">{{view.p3}}</p>
+                            <p class="sub">{{view.subhead3}}</p>
+                            <p class="para">{{view.p4}}</p>
+                            <p class="para">{{view.p5}}</p>
+                            <p class="para">{{view.p6}}</p>
+                            <p class="para">{{view.p7}}</p>
+                            <p class="para">{{view.p8}}</p>
+                            <p class="sub">{{view.subhead4}}</p>
+                            <p class="para">{{view.p9}}</p>
+                            <p class="para">{{view.p10}}</p>
+                        </div>
+                    </ng-template>
+                    <ng-template #notes>
                         <p class="para">{{view.p1}}</p>
                         <p class="sub">{{view.subhead1}}</p>
                         <p class="para">{{view.p2}}</p>
@@ -156,11 +166,14 @@
                         <p class="para">{{view.p6}}</p>
                         <p class="sub">{{view.conclusion}}</p>
                         <p class="para">{{view.p7}}</p>
-                    </div>
-                </ng-template>
+                    </ng-template>
+                </div>
             </div>
-        </div>
+        </ng-container>
     </div>
+
+</section>
+<section class="page2">
     <div class="container mt-5">
         <hr>
         <br />

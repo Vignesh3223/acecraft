@@ -1,6 +1,10 @@
 .page1 {
     background-color: #FFFFFF;
-    padding: 120px 0 50px 0;
+    padding: 120px 0 0 0;
+}
+
+.page2 {
+    padding-bottom: 50px;
 }
 
 .date {
@@ -62,7 +66,8 @@ label {
     font-weight: 500;
 }
 
-input,textarea {
+input,
+textarea {
     border: 1px solid #ccc;
     border-radius: 0;
 }
