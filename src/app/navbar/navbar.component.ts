@@ -10,6 +10,7 @@ import { UserService } from 'src/services/user.service';
 export class NavbarComponent implements OnInit {
 
   cartcount: number = 0;
+  cartitems: any = [];
 
   auth: boolean = false;
 
@@ -18,12 +19,13 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
     this.authService.authSubject.subscribe(
       data => {
-      this.auth = data;
-    }
-   );
+        this.auth = data;
+      }
+    );
 
     this.cartserv.getCartItems().subscribe((res) => {
-      this.cartcount = res.length;
+      this.cartitems = res;
+      this.cartcount = this.cartitems.length;
     });
   }
 }
