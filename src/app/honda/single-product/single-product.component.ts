@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+//router
 import { Router } from '@angular/router';
 
 @Component({
@@ -17,6 +18,7 @@ export class SingleProductComponent implements OnInit {
 
   productId!: number;
 
+  //function to fetch product based on id
   viewProduct(id: number) {
     this.productId = id;
     this.router.navigate(['viewProduct/' + id]);

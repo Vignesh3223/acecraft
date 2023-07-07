@@ -1,7 +1,9 @@
+/*body*/
 .row {
     width: 100%;
 }
 
+/*page1*/
 .page1 {
     background-image: url("/assets/images/School-1.jpg");
     background-attachment: fixed;
@@ -12,6 +14,7 @@
     padding: 100px 0 400px 0;
 }
 
+/*schools list*/
 #scllogo {
     width: 52px;
     height: 50px;
@@ -30,6 +33,7 @@ a {
     color: black;
 }
 
+/*page1 content*/
 .item2 {
     font-family: proxima;
     font-size: 40px;
@@ -39,6 +43,7 @@ a {
     line-height: 1.2;
 }
 
+/*page2*/
 .page2 {
     background-color: #000000;
     padding: 250px 0 250px 0;
@@ -51,6 +56,7 @@ a {
     line-height: 1;
 }
 
+/*page3*/
 .page3 {
     background-image: url("/assets/images/School-2.jpg");
     background-attachment: fixed;
@@ -79,6 +85,7 @@ a {
     line-height: 1;
 }
 
+/*page4*/
 .page4 {
     background-color: #0e0c0d;
     padding: 100px 0 0 0;
@@ -104,6 +111,7 @@ a {
     width: 100%;
 }
 
+/*page5*/
 .page5 {
     background-image: url("/assets/images/School-3.jpg");
     background-size: cover;
@@ -174,6 +182,7 @@ a {
     margin-top: 60px;
 }
 
+/*modal button*/
 #btn1 {
     font-family: proxima;
     border-color: white;
@@ -182,12 +191,14 @@ a {
     margin-top: 15px;
 }
 
+/*modal title*/
 .modal-title {
     font-family: proxima;
     text-align: center;
     margin-left: 50px;
 }
 
+/*form input*/
 input {
     font-family: proxima;
     border: 1px solid #ccc;
@@ -195,6 +206,7 @@ input {
     padding: 20px 10px 20px 46px;
 }
 
+/*firstname , lastname*/
 #firstname,
 #lastname {
     width: 200px;
@@ -203,6 +215,7 @@ input {
     color: #555;
 }
 
+/*email,organisation,phone number,quantity*/
 #email,
 #org,
 #phone,
@@ -239,11 +252,13 @@ label {
     margin-right: 20px;
 }
 
+/*submit button*/
 #btn2 {
     width: 470px;
     border-radius: 100px;
 }
 
+/*icons*/
 .icons i {
     position: absolute;
 }
@@ -253,6 +268,7 @@ label {
     padding-right: 30px;
 }
 
+/*chevron keyframes*/
 #chevron {
     width: 10px;
     height: 20px;

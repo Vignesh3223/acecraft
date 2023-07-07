@@ -1,8 +1,10 @@
+/*page1*/
 .page1 {
     background-color: #FFFFFF;
     padding: 250px 0 0 0;
 }
 
+/*contents*/
 #list1 h1 {
     font-family: proxima;
     font-weight: 500px;
@@ -83,6 +85,7 @@
     font-family: proxima;
 }
 
+/*add to cart & buy now buttons*/
 #btn1,
 #btn2 {
     background-color: #000000;
@@ -95,6 +98,7 @@
     margin-top: 50px;
 }
 
+/*modal button*/
 #btn3 {
     background-color: #000000;
     border: 1px solid black;
@@ -104,6 +108,7 @@
     font-size: 13px;
 }
 
+/*description*/
 .description {
     font-family: proxima;
     font-size: 16px;
@@ -166,6 +171,7 @@
     padding: 10px 230px 10px 230px;
 }
 
+/*modal title*/
 .modal-title {
     font-family: proxima;
     letter-spacing: 10px;

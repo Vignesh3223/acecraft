@@ -1,13 +1,16 @@
+/*page1*/
 .page1 {
     background-color: white;
     padding: 150px 0 30px 0;
 }
 
+/*product/item total*/
 .total {
     font-family: proxima;
     color: #000000;
 }
 
+/*product/item contents*/
 .name,
 .price {
     font-family: proxima;
@@ -16,6 +19,7 @@
     font-weight: 700;
 }
 
+/*product/item quantity*/
 .quantity {
     border: 1px solid #e2dddd;
     font-family: proxima;
@@ -28,6 +32,7 @@
     height: 25px;
 }
 
+/*Quantity increase and decrease*/
 .decrement,
 .increment {
   cursor: pointer;
@@ -39,11 +44,13 @@
     font-size: 15px;
 }
 
+/*empty cart*/
 .empty {
     font-family: proxima;
     color: #000000;
 }
 
+/*product/item deletion (remove)*/
 #remove {
     font-family: proxima;
     color: #FF0000;
@@ -52,6 +59,7 @@
 
 }
 
+/*continue shopping button*/
 #btn1 {
     border: 1px solid black;
     border-radius: 0;
@@ -66,12 +74,14 @@
     margin-left: 1em;
 }
 
+/*coupon code*/
 .code {
     font-family: proxima;
     color: #000000;
     font-size: 19px;
 }
 
+/*apply button*/
 #btn2 {
     border: 1px solid black;
     color: #000000;
@@ -82,6 +92,7 @@
 
 }
 
+/*subtotal*/
 #sub {
     font-family: proxima;
     font-size: 20px;
@@ -90,6 +101,7 @@
     margin-top: 2em;
 }
 
+/*total*/
 #tot {
     font-family: proxima;
     font-size: 25px;
@@ -97,15 +109,18 @@
     font-weight: 700;
 }
 
+/*textbox*/
 #inp {
     width: 250px;
     height: 35px;
 }
 
+/*continue shopping button*/
 #btn3 {
     margin-left: 70px;
 }
 
+/*continue shopping & buy now button*/
 #btn3,
 #btn4 {
     border: 1px solid black;

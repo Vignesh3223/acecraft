@@ -4,6 +4,7 @@ import { Pipe, PipeTransform } from '@angular/core';
   name: 'sort'
 })
 export class HondasortPipe implements PipeTransform {
+  //sort by name
   transform(value: Array<string>, args: any[]): any {
     const sortField = args[0];
     const sortDirection = args[1];
@@ -11,6 +12,7 @@ export class HondasortPipe implements PipeTransform {
     if (sortDirection === 'desc') {
       multiplier = -1;
     }
+    //sort by price
     value.sort((a: any, b: any) => {
       if (a[sortField] < b[sortField]) {
         return -1 * multiplier;

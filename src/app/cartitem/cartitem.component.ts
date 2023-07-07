@@ -1,7 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+//cartservice from service
 import { CartserviceService } from 'src/services/cartservice.service';
+//cart interface from model
 import { Cart } from 'src/models/acecraft';
+//router
 import { Router } from '@angular/router';
+//sweetalert
 import Swal from 'sweetalert2';
 
 @Component({
@@ -12,8 +16,10 @@ import Swal from 'sweetalert2';
 
 export class CartitemComponent implements OnInit {
 
+  //stripe paymentHandler
   paymentHandler: any = null;
 
+  //make payment function
   makePayment(amount: any) {
     const paymentHandler = (<any>window).StripeCheckout.configure({
       key: 'pk_test_51NQoOgSIF8NYMtoSsE3ybqgFcjiafBmE6SgRG0LOoz02qHSXlYDYWfB0wcZzauNoi8fpI8CJ7WQCOqcIeBJG72Pf00sQlgKl12',
@@ -42,6 +48,7 @@ export class CartitemComponent implements OnInit {
     });
   }
 
+  //invoking stripe payment
   invokeStripe() {
     if (!window.document.getElementById('stripe-script')) {
       const script = window.document.createElement('script');
@@ -76,6 +83,7 @@ export class CartitemComponent implements OnInit {
 
   constructor(private cartserv: CartserviceService, private router: Router) { }
 
+  //cart interface
   carts: Cart = {
     id: 0,
     text: '',
@@ -94,6 +102,7 @@ export class CartitemComponent implements OnInit {
   totalprice: number = 0;
   quantity = 1;
 
+  //total price calculate function
   totalPrice(data: any) {
     debugger
     const initialValue = 0;
@@ -104,11 +113,13 @@ export class CartitemComponent implements OnInit {
 
   cart: Cart[] = [];
 
+  //Quantity increase function
   increase(item: Cart) {
     item.quantity++;
     this.cartserv.updateCart(item)
   }
 
+  //Quantity decrease function
   decrease(item: Cart) {
     if (item.quantity <= 1) {
       this.delete(item)
@@ -125,6 +136,7 @@ export class CartitemComponent implements OnInit {
     this.cartserv.updateCart(item)
   }
 
+  //product delete function
   delete(deleteItem: Cart) {
     this.cartserv.removeItemFromCart(deleteItem).subscribe(
       () => console.log(deleteItem.id)
@@ -146,6 +158,7 @@ export class CartitemComponent implements OnInit {
 
   ngOnInit(): void {
     this.invokeStripe();
+    //displaying cart items
     this.cartserv.getCartItems().subscribe(
       (response) => {
         this.cart = response;

@@ -1,7 +1,8 @@
+/*body*/
 .homelayer {
     background-color: #000000;
 }
-
+/*page1*/
 .page1 {
     background-image: url("/assets/images/Home.jpg");
     background-size: cover;
@@ -56,6 +57,7 @@
     font-weight: bold;
 }
 
+/*page2*/
 #img-container {
     overflow: hidden;
 }
@@ -70,6 +72,7 @@
     transform: scale(1.05);
 }
 
+/*page2 card1*/
 .school {
     background-image: url("/assets/images/home1.jpg");
     background-size: cover;
@@ -78,7 +81,6 @@
     padding: 120px 0 550px 0;
     z-index: 0;
 }
-
 
 .box1 {
     border: 1px solid white;
@@ -105,6 +107,7 @@
     font-weight: bold;
 }
 
+/*page2 card2*/
 .work {
     background-image: url("/assets/images/home2.jpg");
     background-size: cover;
@@ -139,6 +142,7 @@
     font-weight: bold;
 }
 
+/*chevron keyframes*/
 #chevron {
     width: 10px;
     height: 20px;

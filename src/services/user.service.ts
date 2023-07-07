@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+//Subject
 import { Subject } from 'rxjs';
 
 @Injectable({
@@ -11,6 +12,7 @@ export class UserService {
 
   public authSubject = new Subject<boolean>();
 
+  //User validate function
   validateAuth(data: boolean) {
     this.authSubject.next(data);
   }

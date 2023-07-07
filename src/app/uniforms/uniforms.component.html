@@ -1,15 +1,19 @@
+<!--page1-->
 <section class="page1">
     <div class="container text-center text1">
         <p class="p1">Decode</p>
         <p class="p2">your kind of designer uniforms.</p>
     </div>
 </section>
+<!--page2-->
 <section class="page2">
     <div class="container">
         <div class="row">
+            <!--page2 title-->
             <div class="col-6 text-start">
                 <p class="p3">SCHOOL <span class="total"> - {{itemcount}} items</span></p>
             </div> 
+            <!--page2 sort-->
             <div class="col-6 text-end">
                 <select (change)="onOptionsSelected($event)" id="sort1">
                     <option value="" disabled selected hidden>Sort by:</option>
@@ -25,6 +29,7 @@
             <p class="p4">NEW HORIZON GURUKUL</p>
         </div>
     </div>
+    <!--fetch products from json-->
     <div class="container justify-content-center">
         <div class="row">
             <div class="col-4 mb-3 justify-content-center"

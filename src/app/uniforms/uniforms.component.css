@@ -1,3 +1,4 @@
+/*page1*/
 .page1 {
     background-image: url("/assets/images/honda-1.jpg");
     background-size: cover;
@@ -8,6 +9,7 @@
     padding: 150px 0 630px;
 }
 
+/*page1 content*/
 .p1,
 .p2 {
     font-size: 30px;
@@ -31,6 +33,7 @@
     left: 100px;
 }
 
+/*page2*/
 .page2 {
     padding-top: 40px;
 }
@@ -50,6 +53,7 @@
     font-weight: 100;
 }
 
+/*sort*/
 #sort1 {
     border: 1px solid #d5d6d9;
     padding: 8px 13px;
@@ -63,6 +67,7 @@
     border-radius: 2px;
 }
 
+/*sort options*/
 #sort1 option{
     color: black;
     font-family: proxima;

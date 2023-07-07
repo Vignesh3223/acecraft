@@ -1,20 +1,27 @@
+<!--page1-->
 <section class="page1">
+    <!--empty cart-->
     <div class="container" *ngIf="cart.length==0;else cartitems" style="padding-bottom: 400px;">
         <div class="row">
             <h3 class="empty">Your shopping cart is empty!</h3>
+            <!--continue shopping button-->
             <button id="btn1" routerLink=''>Continue Shopping</button>
         </div>
     </div>
+    <!--cartitems-->
     <ng-template #cartitems>
         <div class="container text-center">
             <h1 class="total">Your bag total is {{ totalPrice(cart) | currency : "INR" : "symbol" : "3.0" }}</h1>
             <hr>
         </div>
+        <!--data from json-->
         <div class="container" *ngFor="let item of cart">
             <div class="row">
+                <!--product/item image-->
                 <div class="col-3">
                     <img class="img-fluid" src="{{item.image}}" alt="product">
                 </div>
+                <!--product/item details-->
                 <div class="col-5">
                     <h3 class="name">{{item.text}}</h3>
                     <div *ngIf="item.size">
@@ -30,27 +37,35 @@
                         <p class="department">Department: {{item.department}}</p>
                     </div>
                 </div>
+                <!--Quantity decrease and increase icons-->
                 <div class="col-2 text-center d-flex">
                     <span class="decrement" (click)="decrease(item)"><i class="fa-solid fa-minus me-2"
                             style="color: #000000;"></i></span>
                     <h3 class="quantity">{{item.quantity}}</h3><span class="increment" (click)="increase(item)"><i
                             class="fa-solid fa-plus ms-2" style="color: #000000;"></i></span>
                 </div>
+                <!--product/item price based on Quantity-->
                 <div class="col-2 text-center">
                     <h3 class="price">{{item.price*item.quantity | currency : "INR" : "symbol" : "3.0"}}</h3>
+                    <!--product/item deletion (remove)-->
                     <span (click)="delete(item)" id="remove">Remove</span>
                 </div>
             </div>
             <hr>
         </div>
+        <!--page2-->
         <div class="container">
             <div class="row mt-5">
                 <div class="col-6">
+                    <!--form-->
                     <div class="form-group">
+                        <!--coupon code-->
                         <p class="code">Enter Coupon Code here:</p>
+                        <!--textbox & apply button-->
                         <input id="inp" type="text"><button type="button" id="btn2">Apply!</button>
                     </div>
                 </div>
+                <!--subtotal & total-->
                 <div class="col-2">
                     <span id="sub">Sub Total</span>
                     <br /><br />
@@ -62,7 +77,9 @@
                     <span id="tot">{{ totalPrice(cart) | currency : "INR" : "symbol" : "3.0" }}</span>
                     <br /><br />
                     <div class="form d-flex text-end">
+                        <!--continue shoppping-->
                         <button id="btn3" class="me-3" routerLink=''>Continue Shopping</button>
+                        <!--place order-->
                         <button id="btn4" (click)="makePayment(totalPrice(cart))">Place Order</button>
                     </div>
                 </div>

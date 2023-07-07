@@ -1,9 +1,15 @@
 import { Component, OnInit } from '@angular/core';
+//HTTPClient
 import { HttpClient } from '@angular/common/http';
+//router
 import { Router } from '@angular/router';
+//environment for user identification
 import { environment } from 'src/environment/environment';
+//UserService from service
 import { UserService } from 'src/services/user.service';
+//Form attributes
 import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
+//Sweetalert
 import Swal from 'sweetalert2';
 
 @Component({
@@ -14,10 +20,13 @@ import Swal from 'sweetalert2';
 
 export class LoginComponent implements OnInit {
 
+  //assigning form to FormGroup
   public LoginForm!: FormGroup | any;
 
+  //variable to fetch userdata from json
   userurl = environment.userapi;
 
+  //function to return to form if the form is not submitted
   submitted = false;
   get f() {
     return this.LoginForm.controls;
@@ -30,11 +39,13 @@ export class LoginComponent implements OnInit {
     private userService: UserService
   ) { }
 
+  //assigning form fields to FormControl
   useremail: FormControl | any;
   password: FormControl | any;
 
   ngOnInit() {
     this.userService.validateAuth(false);
+    //Form Validation
     this.LoginForm = this.formbuilder.group({
       useremail: ['',
         [Validators.required,
@@ -44,11 +55,13 @@ export class LoginComponent implements OnInit {
     });
   }
 
+  //form submit function
   onSubmit() {
     this.submitted = true;
     if (this.LoginForm.invalid) {
       return;
     }
+    //method to fetch userdata from json and check the validity
     this.http.get<any>(this.userurl).subscribe((res) => {
       const user = res.find((a: any) => {
         return (
@@ -57,6 +70,7 @@ export class LoginComponent implements OnInit {
         );
       });
 
+      //valid user
       if (user) {
         const Toast = Swal.mixin({
           toast: true,
@@ -73,6 +87,7 @@ export class LoginComponent implements OnInit {
         this.router.navigate(['']);
         this.userService.validateAuth(true);
       }
+      //invalid user
       else {
         const Toast = Swal.mixin({
           toast: true,

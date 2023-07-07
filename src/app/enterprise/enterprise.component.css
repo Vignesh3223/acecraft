@@ -1,3 +1,4 @@
+/*page1*/
 .row {
     width: 100%;
 }
@@ -16,6 +17,7 @@
     justify-content: center;
 }
 
+/*honda logo*/
 #honda {
     width: 223px;
     height: 50px;
@@ -39,6 +41,7 @@
     line-height: 1.2;
 }
 
+/*page2*/
 .page2 {
     background-color: #dadada;
 }
@@ -60,11 +63,13 @@
     font-weight: 400;
 }
 
+/*page2 cards*/
 .card-container {
     padding-top: 3em;
     padding-bottom: 3em;
 }
 
+/*card1*/
 .card1 {
     height: 300px;
     width: 300px;
@@ -74,6 +79,7 @@
     transition: transform .2s;
 }
 
+/*card2*/
 .card2 {
     height: 300px;
     width: 300px;
@@ -83,6 +89,7 @@
     transition: transform .2s;
 }
 
+/*card3*/
 .card3 {
     height: 300px;
     width: 300px;
@@ -122,6 +129,7 @@
     transform: scale(0.9);
 }
 
+/*page3*/
 .page3 {
     background-color: #000000;
 
@@ -135,7 +143,7 @@
     padding-top: 3em;
 }
 
-
+/*page3 timeline*/
 .time1 img {
     width: 105px;
     height: 108px;
@@ -158,6 +166,7 @@
     padding: 0 5px 0 5px;
 }
 
+/*page4*/
 .page4 {
     padding-top: 9em;
     background-color: #000000;
@@ -218,6 +227,7 @@
     letter-spacing: 5px;
 }
 
+/*modal invoke button*/
 #btn1 {
     font-family: proxima;
     border-color: white;
@@ -233,18 +243,21 @@
     z-index: 0;
 }
 
+/*modal title*/
 .modal-title {
     font-family: proxima;
     text-align: center;
     margin-left: 50px;
 }
 
+/*form input*/
 input {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 20px 10px 20px 46px;
 }
 
+/*firstname , lastname*/
 #firstname,
 #lastname {
     width: 200px;
@@ -253,6 +266,7 @@ input {
     color: #555;
 }
 
+/*email , organistaion , phone number , quantity*/
 #email,
 #org,
 #phone,
@@ -293,6 +307,7 @@ label {
     border-radius: 100px;
 }
 
+/*icons*/
 .icons i {
     position: absolute;
 }
@@ -302,6 +317,7 @@ label {
     padding-right: 30px;
 }
 
+/*chevron keyframes*/
 #chevron {
     width: 10px;
     height: 20px;

@@ -1,8 +1,12 @@
+<!--page1-->
 <section class="page1">
     <div class="container">
+        <!--title-->
         <h1 class="mb-5">Blogs</h1>
         <div class="row">
+             <!--data fetch from json-->
             <div class="col-md-12 col-lg-6 mb-5" *ngFor="let note of notesList">
+                 <!--card-->
                 <div class="card">
                     <div class="card-body text-center" (click)="viewNote(note.id)">
                         {{note.title}}

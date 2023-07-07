@@ -1,7 +1,9 @@
+/*body*/
 .row {
     width: 100%;
 }
 
+/*page1*/
 .page1 {
     background-image: url('/assets/images/collections-bg.jpg');
     background-repeat: no-repeat;
@@ -37,24 +39,27 @@
     margin: 11em 0 0 3em;
 }
 
+/*page2*/
 .page2 {
     background-color: #b2b3b5;
     margin-top: 4em;
     padding-top: 4em;
 }
 
+/*item1 image*/
 .ball {
     width: 375px;
     height: 200px;
 }
 
-
+/*item1 heading*/
 .point1 h2 {
     font-family: proxima;
     color: #978F8F;
     font-weight: bolder;
 }
 
+/*item2,item3,item4 images*/
 .wool,
 .cotton,
 .viscose {
@@ -62,6 +67,7 @@
     height: 200px;
 }
 
+/*item2,item3,item4 heading*/
 .point2 h1,
 .point3 h1,
 .point4 h1 {
@@ -70,6 +76,7 @@
     font-weight: bolder;
 }
 
+/*item1,item2,item3,item4 contents*/
 .point1 p,
 .point2 p,
 .point3 p,
@@ -80,6 +87,7 @@
     white-space: pre-line;
 }
 
+/*page2 bottom*/
 .clg-1 {
     background-image: url("/assets/images/making-banner.jpg");
     background-size: auto;
@@ -109,6 +117,7 @@
     margin-top: -20px;
 }
 
+/*page3*/
 .page3 {
     background-color: #000000;
     padding: 100px 0 100px 0;
@@ -133,6 +142,7 @@
     height: 312px;
 }
 
+/*page4*/
 .page4 {
     background-image: url("/assets/images/College-3.jpg");
     background-size: cover;
@@ -201,6 +211,7 @@
     letter-spacing: 5px;
 }
 
+/*modal invoke button*/
 #btn1 {
     font-family: proxima;
     border-color: white;
@@ -208,18 +219,21 @@
     border-radius: 0%;
 }
 
+/*modal title*/
 .modal-title {
     font-family: proxima;
     text-align: center;
     margin-left: 50px;
 }
 
+/*form input*/
 input {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 20px 10px 20px 46px;
 }
 
+/*firstname , lastname*/
 #firstname,
 #lastname {
     width: 200px;
@@ -228,6 +242,7 @@ input {
     color: #555;
 }
 
+/*email,organisation,phone number,Quantity*/
 #email,
 #org,
 #phone,
@@ -263,11 +278,13 @@ label {
     margin-right: 20px;
 }
 
+/*submit button*/
 #btn2 {
     width: 470px;
     border-radius: 100px;
 }
 
+/*icons*/
 .icons i {
     position: absolute;
 }

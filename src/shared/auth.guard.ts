@@ -1,6 +1,7 @@
 import { Injectable } from "@angular/core";
 import { CanActivate, Router, UrlTree } from '@angular/router';
 import { Observable } from 'rxjs';
+//UserService from service
 import { UserService } from "src/services/user.service";
 
 @Injectable({
@@ -21,6 +22,7 @@ import { UserService } from "src/services/user.service";
         this.isAuthenticated = data;
       });
   
+      //checking of authentication
       if (this.isAuthenticated == false) {
         console.log('inside false ' + this.isAuthenticated);
         this.router.navigate(['/login']);

@@ -1,3 +1,4 @@
+// Notes interface
 export interface Notes {
     id: number;
     title: string;
@@ -44,12 +45,14 @@ export interface Notes {
     list13: string;
 }
 
+// Schools interface
 export interface Schools {
     id: number;
     logo: string;
     name: string;
 }
 
+// Honda interface
 export interface Honda {
     id: number;
     image: string;
@@ -73,6 +76,7 @@ export interface Honda {
     content5: string;
 }
 
+// Uniforms interface
 export interface Uniforms {
     id: number;
     image: string;
@@ -100,6 +104,7 @@ export interface Uniforms {
     t3: string;
 }
 
+// Cart interface
 export interface Cart {
     id: number | any;
     text: string | undefined;

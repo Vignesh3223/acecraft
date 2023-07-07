@@ -1,8 +1,10 @@
+/*page1*/
 .page1 {
     background-color: #FFFFFF;
     padding: 120px 0 0 0;
 }
 
+/*page2*/
 .page2 {
     padding-bottom: 50px;
 }
@@ -14,6 +16,7 @@
     color: black;
 }
 
+/*note title*/
 .header {
     font-weight: 500;
     font-family: proxima;
@@ -22,6 +25,7 @@
     line-height: 0.8;
 }
 
+/*note subheadings*/
 .sub {
     font-family: proxima;
     font-size: 14px;
@@ -29,12 +33,14 @@
     font-weight: 700;
 }
 
+/*note contents*/
 .para {
     font-family: proxima;
     font-size: 14px;
     font-weight: 400;
 }
 
+/*note lists*/
 ul li {
     line-height: 1.5;
     font-family: proxima;
@@ -49,12 +55,14 @@ h3 {
     color: #978F8F;
 }
 
+/*form label*/
 label {
     font: 15px proxima;
     color: #978F8F;
     font-weight: 700;
 }
 
+/*submit button*/
 #btn1 {
     width: 1140px;
     height: 40px;
@@ -66,6 +74,7 @@ label {
     font-weight: 500;
 }
 
+/*form input*/
 input,
 textarea {
     border: 1px solid #ccc;

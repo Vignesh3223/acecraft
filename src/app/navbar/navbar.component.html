@@ -1,7 +1,9 @@
+<!--navbar-->
 <div class="fixed-top">
     <nav class="navbar-expand-lg navbar-dark navigation">
         <div class="container-fluid">
             <div class="row">
+                <!--navbar title-->
                 <div class="col-12 title">
                     <a class="navbar-brand" routerLink=''>acecraft</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -13,6 +15,7 @@
             </div>
             <div class="row">
                 <div class="col-12">
+                    <!--navbar contents-->
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                         <ul class="navbar navbar-nav me-auto ms-auto mb-2 menu">
                             <li class="nav-item">
@@ -31,8 +34,29 @@
                                 <a class="nav-link" routerLink='/airenmask'>AIREN MASK</a>
                             </li>
                         </ul>
+                        <!--setting icon-->
                         <div class="setting">
                             <i class="pi pi-cog p-3" style="font-size: 1.5rem;color: white;"></i>
+                            <!--settings dropdown when use logged in-->
+                            <div *ngIf="auth;else log">
+                                <ul class="setitems">
+                                    <a routerLink='/order'>
+                                        <li>Order Status | <i class="fa-solid fa-box" style="color: #978F8F;"></i></li>
+                                    </a>
+                                    <a routerLink='/contact'>
+                                        <li>Contact | <i class="fa-solid fa-comments" style="color: #978F8F;"></i></li>
+                                    </a>
+                                    <a routerLink=''>
+                                        <li>Account | <i class="fa-solid fa-user" style="color: #978F8F;"></i>
+                                        </li>
+                                    </a>
+                                    <a routerLink='/login'>
+                                        <li>Logout | <i class="fa-solid fa-right-to-bracket"
+                                                style="color: #978F8F;"></i></li>
+                                    </a>
+                                </ul>
+                            </div>
+                            <!--settings dropdown when use logged out-->
                             <ng-template #log>
                                 <ul class="setitems">
                                     <a routerLink='/login'>
@@ -52,25 +76,8 @@
                                     </a>
                                 </ul>
                             </ng-template>
-                            <div *ngIf="auth;else log">
-                                <ul class="setitems">
-                                    <a routerLink='/order'>
-                                        <li>Order Status | <i class="fa-solid fa-box" style="color: #978F8F;"></i></li>
-                                    </a>
-                                    <a routerLink='/contact'>
-                                        <li>Contact | <i class="fa-solid fa-comments" style="color: #978F8F;"></i></li>
-                                    </a>
-                                    <a routerLink=''>
-                                        <li>Account | <i class="fa-solid fa-user" style="color: #978F8F;"></i>
-                                        </li>
-                                    </a>
-                                    <a routerLink='/login'>
-                                        <li>Logout | <i class="fa-solid fa-right-to-bracket"
-                                                style="color: #978F8F;"></i></li>
-                                    </a>
-                                </ul>
-                            </div>
                         </div>
+                        <!--cart icon with badge value-->
                         <a routerLink="/cartitems">
                             <i class="pi pi-shopping-cart mr-4 custom-badge" pBadge
                                 style="font-size: 1.5rem; color: white;" value="{{cartcount}}" severity="danger">

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+//Honda interface from model
 import { Honda } from 'src/models/acecraft';
+//AceService from service
 import { AceServiceService } from 'src/services/ace-service.service';
 
 @Component({
@@ -9,14 +11,16 @@ import { AceServiceService } from 'src/services/ace-service.service';
 })
 export class ProductListComponent {
 
+  //variable to store products in Honda 
   products: Honda[] | any;
 
   constructor(private aceService: AceServiceService) { }
 
   ngOnInit() {
+    //function to display products
     this.aceService.getHonda().subscribe(
       (response) => this.products = response);
   }
 
-  
+
 }

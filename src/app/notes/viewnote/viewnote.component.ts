@@ -1,7 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+//ActivatedRoute, Router
 import { ActivatedRoute, Router } from '@angular/router';
+//Form attributes
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+//AceService from service
 import { AceServiceService } from 'src/services/ace-service.service';
+//Sweetalert
 import Swal from 'sweetalert2';
 
 @Component({
@@ -11,12 +15,18 @@ import Swal from 'sweetalert2';
 })
 export class ViewnoteComponent implements OnInit {
 
+  //variable to fetch data based on id
   noteId: number | any;
+
+  //variable to store the json data
   notesdata: any;
 
   submitted = false;
 
+  //assigning form to FormGroup
   comment: FormGroup | any;
+
+  //assigning form fields to FormControl 
   name: FormControl | any;
   email: FormControl | any;
   message: FormControl | any;
@@ -27,6 +37,7 @@ export class ViewnoteComponent implements OnInit {
     private actRoute: ActivatedRoute,) { }
 
   ngOnInit() {
+    //Form Validation
     this.name = new FormControl('', [
       Validators.required,
     ]);
@@ -44,6 +55,7 @@ export class ViewnoteComponent implements OnInit {
     });
     this.noteId = this.actRoute.snapshot.params['id'];
 
+    //function to fetch notes from json
     this.aceService.getNotesbyId(this.noteId).subscribe((response) => {
       console.log(response);
       this.notesdata = response;
@@ -51,8 +63,10 @@ export class ViewnoteComponent implements OnInit {
     });
   }
 
+  //Form submit function
   onSubmit(form: any) {
     this.submitted = true;
+    //Valid Form
     if (form.valid) {
       const Toast = Swal.mixin({
         toast: true,
@@ -68,6 +82,7 @@ export class ViewnoteComponent implements OnInit {
       });
       form.reset();
     }
+    //Invalid Form
     else {
       const Toast = Swal.mixin({
         toast: true,

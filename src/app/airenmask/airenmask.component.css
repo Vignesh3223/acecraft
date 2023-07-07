@@ -1,15 +1,17 @@
-
+/*Home page link*/
 .container a {
     text-decoration: none;
     font-family: proxima;
     color: white;
 }
 
+/*page1*/
 .page1 {
     background-color: #000000;
-    height:35em;
+    height: 35em;
 }
 
+/*error line & no page exist line*/
 h1,
 h3 {
     font-family: proxima;

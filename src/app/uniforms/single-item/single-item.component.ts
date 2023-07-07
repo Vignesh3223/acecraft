@@ -1,4 +1,5 @@
 import { Component,Input,OnInit } from '@angular/core';
+//router
 import { Router } from '@angular/router';
 
 @Component({
@@ -15,8 +16,10 @@ export class SingleItemComponent implements OnInit {
 
   ngOnInit() { }
 
+  //variable to store product id
   itemId!: number;
 
+  //function to view product based on id
   viewItem(id: number) {
     this.itemId = id;
     this.router.navigate(['viewItem/' + id]);

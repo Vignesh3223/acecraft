@@ -1,9 +1,12 @@
+/*page1*/
 .page1 {
     background-color: #e1e1e1;
     padding: 100px 0 250px 0;
 }
 
-#p1,#p11 {
+/*page1 content*/
+#p1,
+#p11 {
     font-family: proxima-thin;
     font-size: 32px;
     color: #000000;
@@ -20,7 +23,7 @@
 
 #cont1 {
     margin: 200px 0 0 0;
-    margin-left: -30px; 
+    margin-left: -30px;
     line-height: 1.1;
 }
 
@@ -29,14 +32,16 @@
     margin-left: 30px;
 }
 
-.line{
+/*seperator line*/
+.line {
     border-right: 1px solid #000;
     height: 300px;
     position: absolute;
-    top:210px;
-    left:49%;
+    top: 210px;
+    left: 49%;
 }
 
+/*textbox*/
 #textbox {
     width: 350px;
     height: 35px;
@@ -44,6 +49,7 @@
     border-radius: 0%;
 }
 
+/*continue button*/
 #btn1 {
     width: 200px;
     height: 36px;
@@ -65,18 +71,21 @@
     cursor: pointer;
 }
 
+/*modal title*/
 .modal-title {
     font-family: proxima;
     text-align: center;
     margin-left: 50px;
 }
 
+/*form input*/
 input {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 20px 10px 20px 42px;
 }
 
+/*firstname , lastname*/
 #firstname,
 #lastname {
     width: 200px;
@@ -85,6 +94,7 @@ input {
     color: #555;
 }
 
+/*email,organisation,phone number,quantity*/
 #email,
 #org,
 #phone,
@@ -121,11 +131,13 @@ label {
     margin-right: 20px;
 }
 
+/*submit button*/
 #btn2 {
     width: 470px;
     border-radius: 100px;
 }
 
+/*icons*/
 .icons i {
     position: absolute;
 }

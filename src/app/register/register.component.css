@@ -1,3 +1,4 @@
+/*page1*/
 .page1 {
     background-color: #FFFFFF;
     padding: 150px 0 50px 0;
@@ -8,6 +9,7 @@
     padding: 25px;
 }
 
+/*form*/
 form {
     width: 400px;
     padding: 20px;
@@ -18,6 +20,7 @@ form {
     margin-right: auto;
 }
 
+/*form title*/
 .title {
     font-family: proxima;
     color: #978F8F;
@@ -25,11 +28,13 @@ form {
     margin-top: 15px;
 }
 
+/*input & select*/
 input,select {
     width: 350px;
     border-radius: 0;
 }
 
+/*radio button*/
 #scl,
 #ent {
     border: none;
@@ -37,6 +42,7 @@ input,select {
 
 }
 
+/*register button*/
 #btn1 {
     border-radius: 0;
     background-color: #000000;
@@ -47,10 +53,12 @@ input,select {
     cursor: pointer;
 }
 
+/*login*/
 #log {
     cursor: pointer;
 }
 
+/*alredy an account holder*/
 .already{
     font-family: proxima;
     color: #978F8F;

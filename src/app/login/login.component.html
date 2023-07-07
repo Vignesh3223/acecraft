@@ -1,8 +1,12 @@
+<!--page1-->
 <section class="page1">
     <div class="container wrapper">
         <div class="container">
+            <!--form-->
             <form [formGroup]="LoginForm" (ngSubmit)="onSubmit()" novalidate>
+                <!--form title-->
                 <h2 class="title mb-4">Login with ACECRAFT</h2>
+                <!--username-->
                 <div class="form-group mb-3">
                     <input type="text" class="form-control" placeholder="Username" formControlName="useremail" />
                     <div class="error ng-binding text-center text-danger">
@@ -14,6 +18,7 @@
                             be in proper format</label>
                     </div>
                 </div>
+                <!--password-->
                 <div class="form-group mb-3">
                     <input type="password" class="form-control" placeholder="Password" formControlName="password" />
                     <div class="error ng-binding text-center text-danger">
@@ -21,9 +26,11 @@
                             required</label>
                     </div>
                 </div>
+                <!--login button-->
                 <div class="form-group">
                     <button type="buttton" class="mt-1" id="btn1">Login</button>
                 </div>
+                <!--forgot password-->
                 <div class="form-group mt-4 text-center">
                     <span class="forgot">Forgot Password ?</span>
                 </div>

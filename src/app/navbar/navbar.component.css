@@ -1,7 +1,9 @@
+/*navbar*/
 .navigation {
     background-color: #000000;
 }
 
+/*navbar title*/
 .navbar-brand {
     color: white !important;
     font-size: 30px;
@@ -10,6 +12,7 @@
     display: inline-block;
 }
 
+/*navbar contents*/
 .nav-link {
     color: #9e9e9e;
     font-weight: 700;
@@ -29,6 +32,7 @@ ul li {
     font-size: 15px;
 }
 
+/*navbar dropdown menu*/
 .setitems {
     display: none
 }

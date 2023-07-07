@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+//Uniforms interface from model
 import { Uniforms } from 'src/models/acecraft';
+//AceService from service
 import { AceServiceService } from 'src/services/ace-service.service';
 
 @Component({
@@ -9,12 +11,14 @@ import { AceServiceService } from 'src/services/ace-service.service';
 })
 export class ItemsListComponent {
 
+  //variable to store data from json
   products: Uniforms[] | any;
 
   constructor(private aceService: AceServiceService,) { }
 
 
   ngOnInit() {
+    //function to fetch data from json
     this.aceService.getUniform().subscribe(
       (response) => this.products = response);
   }

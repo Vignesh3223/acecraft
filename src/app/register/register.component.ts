@@ -1,8 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+//HTTPClient
 import { HttpClient } from '@angular/common/http';
+//environment to store/fetch user data
 import { environment } from 'src/environment/environment';
+//router
 import { Router } from '@angular/router';
+//Form attributes
 import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
+//Sweetalert
 import Swal from 'sweetalert2';
 
 @Component({
@@ -13,6 +18,7 @@ import Swal from 'sweetalert2';
 
 export class RegisterComponent implements OnInit {
 
+  //variable to store user data
   userurl = environment.userapi;
 
   registerForm = new FormGroup({
@@ -37,6 +43,7 @@ export class RegisterComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    //Form Validation
     this.registerForm = this.formBuilder.group({
       firstname: ['',
         [Validators.required,
@@ -75,16 +82,19 @@ export class RegisterComponent implements OnInit {
     console.log(this.registerForm.value)
   }
 
+  //function to return to form controls
   get f() {
     return this.registerForm.controls;
   }
 
+  //Form submit function
   onSubmit() {
     this.submitted = true;
     if (this.registerForm.invalid) {
       return;
     }
 
+    //method to post (add) the data to the json
     this.http.post<any>(this.userurl, this.registerForm.value)
       .subscribe((res) => {
         console.log(res);

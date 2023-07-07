@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+//timeline items interface
 interface EventItem {
   id?: number;
   status?: string;
@@ -15,6 +16,7 @@ interface EventItem {
 export class EnterpriseComponent {
   events: EventItem[];
 
+  //timeline items
   constructor() {
     this.events = [
       { id: 1, status: 'Single line brief', image: '/assets/images/icon-1.png', color: '#978F8F' },

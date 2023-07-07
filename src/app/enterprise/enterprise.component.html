@@ -1,10 +1,13 @@
+<!--page1-->
 <section class="page1">
     <div class="container-breakpoint bg-white">
         <div class="row">
             <div class="col-12 text-center header">
+                <!--honda logo-->
                 <a routerLink='/honda' id="link">
-                <img id="honda" src="/assets/images/honda.png" class="mt-3" alt="honda">
-                <h6>HONDA CAR'S DEALER MANPOWER UNIFORM</h6></a>
+                    <img id="honda" src="/assets/images/honda.png" class="mt-3" alt="honda">
+                    <h6>HONDA CAR'S DEALER MANPOWER UNIFORM</h6>
+                </a>
             </div>
         </div>
     </div>
@@ -13,6 +16,7 @@
         <span><i id="chevron" class="fa-solid fa-chevron-down fa-2xs"></i></span>
     </div>
 </section>
+<!--page2-->
 <section class="page2">
     <div class="container-breakpoint text-center content2">
         <h1>Work Relaxed.</h1>
@@ -20,8 +24,10 @@
         <p>We still do. They're comfy, relaxed and designed to suit your workplace.</p>
     </div>
     <div class="container card-container">
+        <!--page2 cards-->
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
+                <!--card1-->
                 <div class="card card1">
                     <div class="card-body text-center">
                         <h5>F(IT) MATTERS</h5>
@@ -29,6 +35,7 @@
                     </div>
                 </div>
             </div>
+            <!--card2-->
             <div class="col">
                 <div class="card card2">
                     <div class="card-body text-center">
@@ -38,6 +45,7 @@
                     </div>
                 </div>
             </div>
+            <!--card3-->
             <div class="col">
                 <div class="card card3">
                     <div class="card-body text-center">
@@ -51,10 +59,12 @@
         </div>
     </div>
 </section>
+<!--page3-->
 <section class="page3">
     <div class="container-fluid">
         <h1 class="header2">This is how we do it</h1>
     </div>
+    <!--page3 timeline-->
     <div class="container time1">
         <div class="timeline-wrapper">
             <p-timeline [value]="events" layout="horizontal" align="top" styleClass="customized-timeline">
@@ -73,6 +83,7 @@
         </div>
     </div>
 </section>
+<!--page4-->
 <section class="page4">
     <div class="container-breakpoint">
         <div class="row justify-content-center">
@@ -80,6 +91,7 @@
                 <p id="c1">Designer Uniforms</p>
                 <p id="c2">by</p>
                 <p id="c3">acecraft</p>
+                <!--modal invoke button-->
                 <button type="button" id="btn1" class="btn btn-transparent" data-bs-toggle="modal"
                     data-bs-target="#exampleModal">
                     Get In Touch
@@ -90,36 +102,45 @@
         </div>
     </div>
 </section>
+<!--modal-->
 <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
+                <!--modal title-->
                 <h4 class="modal-title" id="exampleModalLabel">Get your Uniforms designed and<br>styled by Us!</h4>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <div class="container-fluid icons">
+                    <!--form-->
                     <div class="row">
+                        <!--firstname-->
                         <div class="col-6 ">
                             <i class="fa-solid fa-user fa-2xl icon" style="color: #d2d0d0;"></i>
                             <input type="text" id="firstname" placeholder="First Name">
                         </div>
+                        <!--lastname-->
                         <div class="col-6">
                             <input type="text" id="lastname" placeholder="Last Name">
                         </div>
                     </div><br>
+                    <!--email-->
                     <div class="row">
                         <i class="fa-solid fa-envelope fa-2xl icon" style="color: #d2d0d0;"></i>
                         <input type="email" id="email" placeholder="Professional Email">
                     </div><br>
+                    <!--organisation-->
                     <div class="row">
                         <i class="fa-solid fa-building fa-2xl icon" style="color: #d2d0d0;"></i>
                         <input type="text" id="org" placeholder="Organisation">
                     </div><br>
+                    <!--phone number-->
                     <div class="row">
                         <i class="fa-solid fa-mobile fa-2xl icon" style="color: #d2d0d0;"></i>
                         <input type="text" id="phone" placeholder="Phone No.">
                     </div>
+                    <!--quantity-->
                     <p id="quan">Quantity required</p>
                     <div id="choice">
                         <input type="radio" id="quantity1" name="age" value="50">
@@ -130,6 +151,7 @@
                         <label for="age3">100+ sets</label><br><br>
                     </div>
                 </div>
+                <!--submit button-->
                 <button type="button" id="btn2" class="btn btn-secondary" data-bs-dismiss="modal">Submit</button>
             </div>
         </div>

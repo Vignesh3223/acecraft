@@ -1,8 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+//ActivatedRoute , router
 import { ActivatedRoute, Router } from '@angular/router';
+//AceService from service
 import { AceServiceService } from 'src/services/ace-service.service';
+//CartService from service
 import { CartserviceService } from 'src/services/cartservice.service';
+//Cart interface from model
 import { Cart } from 'src/models/acecraft';
+//Sweetalert
 import Swal from 'sweetalert2';
 
 @Component({
@@ -11,7 +16,10 @@ import Swal from 'sweetalert2';
   styleUrls: ['./view-product.component.css']
 })
 export class ViewProductComponent implements OnInit {
+  //variable to fetch product based on id
   productId!: number;
+
+  //variable to store products from json
   productsData: any;
 
   constructor(
@@ -39,6 +47,7 @@ export class ViewProductComponent implements OnInit {
   gender: string | undefined;
   department: string | undefined;
 
+  //function to post (add) records in cart json
   addtoCart(item: any) {
     this.carts.id = item.id;
     this.carts.text = item.text;

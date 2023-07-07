@@ -1,8 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+//ActivatedRoute,router
 import { ActivatedRoute, Router } from '@angular/router';
+//AceService from service
 import { AceServiceService } from 'src/services/ace-service.service';
+//Cartservice from service
 import { CartserviceService } from 'src/services/cartservice.service';
+//Cart interface from model
 import { Cart } from 'src/models/acecraft';
+//Sweetalert
 import Swal from 'sweetalert2';
 
 @Component({
@@ -11,7 +16,10 @@ import Swal from 'sweetalert2';
   styleUrls: ['./view-item.component.css']
 })
 export class ViewItemComponent implements OnInit {
+  //variable to store product id
   itemId!: number;
+
+  //variable to store json data
   itemsData: any;
 
   constructor(
@@ -39,6 +47,7 @@ export class ViewItemComponent implements OnInit {
   size: number | undefined;
   size1: string | undefined;
 
+  //function to add products to cart
   addtoCart(item: any) {
     this.carts.id = item.id;
     this.carts.text = item.text;
@@ -68,6 +77,7 @@ export class ViewItemComponent implements OnInit {
   ngOnInit() {
     this.itemId = this.actRoute.snapshot.params['id'];
 
+    //function to fetch product based on id
     this.aceService.getUniformbyId(this.itemId).subscribe((response) => {
       console.log(response);
       this.itemsData = response;
