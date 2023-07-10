@@ -19,7 +19,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { BadgeModule } from 'primeng/badge';
 //Home Component
 import { HomeComponent } from './home/home.component';
-import { SplitterModule } from 'primeng/splitter';
 //Footer Component
 import { FooterComponent } from './footer/footer.component';
 //Airen mask Component
@@ -107,7 +106,6 @@ import { ContactComponent } from './contact/contact.component';
     ReactiveFormsModule,
     HttpClientModule,
     BadgeModule,
-    SplitterModule,
     DialogModule,
     ButtonModule,
     CardModule,
