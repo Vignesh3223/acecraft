@@ -31,7 +31,6 @@ import { DialogModule } from 'primeng/dialog';
 import { ButtonModule } from 'primeng/button';
 //Notes Component
 import { NotesComponent } from './notes/notes.component';
-import { CardModule } from 'primeng/card';
 //Enterprise Component
 import { EnterpriseComponent } from './enterprise/enterprise.component';
 //primeng Timeline Module
@@ -108,7 +107,6 @@ import { ContactComponent } from './contact/contact.component';
     BadgeModule,
     DialogModule,
     ButtonModule,
-    CardModule,
     TimelineModule,
     CarouselModule,
   ],
