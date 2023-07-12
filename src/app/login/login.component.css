@@ -3,8 +3,9 @@
     background-color: #FFFFFF;
     padding: 150px 0 50px 0;
 }
-.wrapper{
-    border:0.5px solid #f5eeee;
+
+.wrapper {
+    border: 0.5px solid #f5eeee;
     padding: 25px;
 }
 
@@ -28,25 +29,31 @@ form {
 }
 
 /*input field*/
-input{
+input {
     border-radius: 0;
 }
 
 /*login button*/
-#btn1{
+#btn1 {
     border-radius: 0;
     background-color: #000000;
     color: #FFFFFF;
-    font:15px proxima;
-    width:360px;
-    height:36px;
+    font: 15px proxima;
+    width: 360px;
+    height: 36px;
     cursor: pointer;
 }
 
 /*forgot password*/
-.forgot{
+.forgot {
     font-family: proxima;
     color: #978F8F;
     font-size: 12px;
-    cursor:pointer;
+}
+
+.forgot a {
+    text-decoration: none;
+    font-family: proxima;
+    color: #978F8F;
+    font-size: 12px;
 }
