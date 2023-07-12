@@ -101,7 +101,6 @@ import { ContactComponent } from './contact/contact.component';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    CardModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
