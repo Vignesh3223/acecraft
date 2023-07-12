@@ -9,6 +9,7 @@ import { UserService } from 'src/services/user.service';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
+
 export class NavbarComponent implements OnInit {
 
   //variable to store the count of cart items
@@ -22,6 +23,7 @@ export class NavbarComponent implements OnInit {
 
   constructor(private cartserv: CartserviceService, private authService: UserService) { }
 
+
   ngOnInit() {
     //function to check the authentication of the user
     this.authService.authSubject.subscribe(
@@ -30,10 +32,10 @@ export class NavbarComponent implements OnInit {
       }
     );
 
-    //function to get the count of cart items 
+    //function to get the count of cart items in cart icon badge 
     this.cartserv.getCartItems().subscribe((res) => {
       this.cartitems = res;
-      this.cartcount = this.cartitems.length;
+      this.cartcount = res.length;
     });
   }
 }

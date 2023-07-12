@@ -8,6 +8,7 @@ import { Notes, Schools, Honda, Uniforms } from 'src/models/acecraft';
 @Injectable({
   providedIn: 'root'
 })
+
 export class AceServiceService {
 
   constructor(private http: HttpClient) { }

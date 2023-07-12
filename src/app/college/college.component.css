@@ -6,6 +6,7 @@
 /*page1*/
 .page1 {
     background-image: url('/assets/images/collections-bg.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
     top: 6em;
     padding: 0 0 160px 0;
@@ -183,7 +184,7 @@
     width: 80px;
     height: 2px;
     background: #978f8f;
-    left: 560px;
+    left: 650px;
     top: 32%;
     position: absolute;
 }
@@ -194,7 +195,7 @@
     width: 80px;
     height: 2px;
     background: #978f8f;
-    right: 560px;
+    right: 650px;
     top: 32%;
     position: absolute;
 }
