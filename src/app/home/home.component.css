@@ -164,3 +164,19 @@
         left: 0px;
     }
 }
+
+@media (max-width:768px){
+    .page1{
+        margin-top: 70px;
+        width:100%;
+    }
+}
+
+@media (max-width:320px){
+    .thin,.bold{
+        font-size: 30px;
+    }
+    .box,.box1,.box2{
+        width: 250px;
+    }
+}

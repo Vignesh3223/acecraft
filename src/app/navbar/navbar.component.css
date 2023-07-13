@@ -22,10 +22,6 @@
     color: white;
 }
 
-.title {
-    text-align: center;
-}
-
 ul li {
     padding-left: 40px;
     font-family: proxima;
@@ -75,3 +71,4 @@ ul li {
 .setitems li:hover {
     color: white;
 }
+

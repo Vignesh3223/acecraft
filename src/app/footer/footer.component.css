@@ -1,6 +1,7 @@
-.page1{
+.page1 {
     background-color: #000000;
 }
+
 /*icons*/
 #icon {
     width: 50px;
@@ -30,4 +31,16 @@
 
 .footer .col-lg-2 {
     border-right: solid white .1em;
+}
+
+@media(max-width:575px) {
+    .page1 {
+        margin-top: -15px;
+    }
+}
+
+@media (min-width:768px) and (max-width:995px) {
+    .footer .col-lg-2:nth-child(5) {
+        margin-left: 180px;
+    }
 }
